@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="UTF-8">
+    <script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script>
+    <script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.src).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+    <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "h4cjfdkm4y");
+</script>
+
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://www.amp.tech/xmlrpc.php" />
+    <link rel="shortcut icon" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <!-- This site is optimized with the Yoast SEO Premium plugin v21.1 (Yoast SEO v21.1) - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>AMP Energy Management for EV</title>
+    <link rel="preload" as="font" href="https://www.amp.tech/wp-content/themes/porto/fonts/fontawesome/fa-brands-400.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://www.amp.tech/wp-content/themes/porto/fonts/fontawesome/fa-solid-900.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2" crossorigin>
+    
+    <meta name="description" content="Pioneers in energy management for EVs, AMP provides Charging, BMS, and cloud solutions for all-electric vehicle applications." />
+    <link rel="canonical" href="https://www.amp.tech/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="01 Home" />
+    <meta property="og:description" content="Pioneers in energy management for EVs, AMP provides Charging, BMS, and cloud solutions for all-electric vehicle applications." />
+    <meta property="og:url" content="https://www.amp.tech/" />
+    <meta property="og:site_name" content="AMP" />
+    <meta property="article:modified_time" content="2023-07-31T16:38:19+00:00" />
+    <meta property="og:image" content="https://www.amp.tech/wp-content/uploads/2023/04/AMP-Energy-Management-System-1.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" class="yoast-schema-graph">
+    
+    </script>
+    <!-- / Yoast SEO Premium plugin. -->
+    <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+    <link rel="alternate" type="application/rss+xml" title="AMP &raquo; Feed" href="https://www.amp.tech/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="AMP &raquo; Comments Feed" href="https://www.amp.tech/comments/feed/" />
+    <link rel="shortcut icon" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <style ></style>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/themes/amp/assets/js/custom.js?ver=6.3' id='custom-script-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?ver=6.3' id='wow-script-js'></script>
+    <link rel="https://api.w.org/" href="https://www.amp.tech/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://www.amp.tech/wp-json/wp/v2/pages/16" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.amp.tech/xmlrpc.php?rsd" />
+    <link rel='shortlink' href='https://www.amp.tech/' />
+    <link rel="alternate" type="application/json+oembed" href="https://www.amp.tech/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.amp.tech%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://www.amp.tech/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.amp.tech%2F&#038;format=xml" />
+ 
+    <meta name="generator" content="Elementor 3.15.2; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+    <link rel="icon" href="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon-150x150.png" sizes="32x32" />
+    <link rel="icon" href="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <meta name="msapplication-TileImage" content="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+ 
+</head>
+
+<body class="home page-template-default page page-id-16 wp-embed-responsive porto-rounded porto-breadcrumbs-bb full blog-1 loading-overlay-showing elementor-default elementor-kit-3143 elementor-page elementor-page-16">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC7P6MR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="loading-overlay">
+        <div class="bounce-loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <!-- page wrapper -->
+        <!-- header wrapper -->
+        <div class="header-wrapper">
+            <header id="header" class="header-builder">
+                <div class="header-top">
+                    <div class="header-row container">
+                        <div class="header-col header-right">
+                            <div class="custom-html"><a href="https://www.amp.tech/careers/"><i class="fa fa-chevron-right tensizefont"></i> Careers </a>
+                                <a href="https://www.amp.tech/contact-us/"><i class="fa fa-chevron-right tensizefont"></i> Contact Us</a></div>
+                            <div class="searchform-popup search-popup"><a class="search-toggle" aria-label="Search Toggle" href="#"><i class="fas fa-search"></i><span class="search-text">Search</span></a>
+                                <form action="https://www.amp.tech/" method="get" class="searchform">
+                                    <div class="searchform-fields">
+                                        <span class="text"><input name="s" type="text" value="" placeholder="Search" autocomplete="off" /></span>
+                                        <span class="button-wrap">
+                                            <button class="btn btn-special" title="Search" type="submit"><i class="fas fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                    <div class="live-search-list"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-main">
+                    <div class="header-row container">
+                        <div class="header-col header-left">
+                            <h2 class="logo">
+                                <a href="https://www.amp.tech/" title="AMP - " rel="home">
+                                    <img class="img-responsive standard-logo retina-logo" width="1819" height="281" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201819%20281'%3E%3C/svg%3E" alt="AMP" data-lazy-src="//www.amp.tech/wp-content/uploads/2022/05/AMP-Logo-Header.svg" /><noscript><img class="img-responsive standard-logo retina-logo" width="1819" height="281" src="//www.amp.tech/wp-content/uploads/2022/05/AMP-Logo-Header.svg" alt="AMP" /></noscript> </a>
+                            </h2>
+                        </div>
+                        <div class="header-col header-right">
+                            <ul id="menu-menu-5122022" class="main-menu mega-menu">
+                                <li id="nav-menu-item-10545" class="ampos menu-item menu-item-type-post_type menu-item-object-page narrow"><a href="https://www.amp.tech/connected-energy-management-system/">EMS</a></li>
+                                <li id="nav-menu-item-10547" class="hamberger menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub narrow"><a class="nolink" href="#">Solutions</a>
+                                    <div class="popup">
+                                        <div class="inner" style="">
+                                            <ul class="sub-menu">
+                                                <li id="nav-menu-item-10991" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://www.amp.tech/ev-charging-solutions/">Charging</a></li>
+                                                <li id="nav-menu-item-10993" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://www.amp.tech/energy-management-system-for-ev/">Energy Management</a></li>
+                                                <li id="nav-menu-item-10992" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="https://www.amp.tech/battery-management-system/">Battery Management</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="nav-menu-item-19975" class="menu-item menu-item-type-post_type menu-item-object-page narrow"><a href="https://www.amp.tech/media/">Media</a></li>
+                                <li id="nav-menu-item-10995" class="menu-item menu-item-type-post_type menu-item-object-page narrow"><a href="https://www.amp.tech/about-us/">About Us</a></li>
+                                <li id="nav-menu-item-14080" class="desk-men menu-item menu-item-type-post_type menu-item-object-page narrow"><a href="https://www.amp.tech/careers/">Careers</a></li>
+                                <li id="nav-menu-item-19944" class="contact-usmenu menu-item menu-item-type-post_type menu-item-object-page narrow"><a href="https://www.amp.tech/contact-us/">Contact Us</a></li>
+                            </ul><span class="separator"></span>
+                            <div class="share-links"> <a target="_blank" rel="nofollow noopener noreferrer" class="share-linkedin" href="https://www.linkedin.com/company/amp-energy-management" title="LinkedIn"></a>
+                            </div><a class="mobile-toggle" href="#" aria-label="Mobile Menu"><i class="fas fa-bars"></i></a>
+                        </div>
+                    </div>
+                    <div id="nav-panel">
+                        <div class="container">
+                            <div class="mobile-nav-wrap">
+                                <div class="menu-wrap">
+                                    <ul id="menu-menu-5122023" class="mobile-menu accordion-menu">
+                                        <li id="accordion-menu-item-10545" class="ampos menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.amp.tech/connected-energy-management-system/">EMS</a></li>
+                                        <li id="accordion-menu-item-10547" class="hamberger menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a class="nolink" href="#">Solutions</a>
+                                            <span class="arrow"></span>
+                                            <ul class="sub-menu">
+                                                <li id="accordion-menu-item-10991" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.amp.tech/ev-charging-solutions/">Charging</a></li>
+                                                <li id="accordion-menu-item-10993" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.amp.tech/energy-management-system-for-ev/">Energy Management</a></li>
+                                                <li id="accordion-menu-item-10992" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.amp.tech/battery-management-system/">Battery Management</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="accordion-menu-item-19975" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.amp.tech/media/">Media</a></li>
+                                        <li id="accordion-menu-item-10995" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.amp.tech/about-us/">About Us</a></li>
+                                        <li id="accordion-menu-item-14080" class="desk-men menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.amp.tech/careers/">Careers</a></li>
+                                        <li id="accordion-menu-item-19944" class="contact-usmenu menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.amp.tech/contact-us/">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- end header wrapper -->
+        <div id="main" class="column1 wide clearfix no-breadcrumbs">
+            <!-- main -->
+            <div class="container-fluid">
+                <div class="row main-content-wrap">
+                    <!-- main content -->
+                    <div class="main-content col-lg-12">
+                        <div id="content" role="main">
+                            <article class="post-16 page type-page status-publish hentry">
+                                <h2 class="entry-title" style="display: none;">01 Home</h2><span class="vcard" style="display: none;"><span class="fn"><a href="https://www.amp.tech/author/sanjay/" title="Posts by Sanjay Sharma" rel="author">Sanjay Sharma</a></span></span><span class="updated" style="display:none">2023-07-31T16:38:19+00:00</span>
+                                <div class="page-content">
+                                    <div data-elementor-type="wp-page" data-elementor-id="16" class="elementor elementor-16">
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-f3d0366 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="f3d0366" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7e08dff" data-id="7e08dff" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-64f1e3d elementor-widget elementor-widget-heading" data-id="64f1e3d" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <style></style>
+                                                                <h1 class="elementor-heading-title elementor-size-default">Unlock <b>CLEAN </b>Energy</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-9533ff1 elementor-widget elementor-widget-heading" data-id="9533ff1" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default">AMP Energy Management for E-Mobility</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-44e59b6 elementor-widget elementor-widget-heading" data-id="44e59b6" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default"><span style="letter-spacing: normal; white-space: normal;">Our goal is to influence clean energy through an all-in-one energy management system</span>. <br>If we can unlock clean energy, we can unlock a path to a greener world.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3c747cf" data-id="3c747cf" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-fd25b33 elementor-widget elementor-widget-video" data-id="fd25b33" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;play_on_mobile&quot;:&quot;yes&quot;,&quot;mute&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+                                                            <div class="elementor-widget-container">
+                                                                <style></style>
+                                                                <div class="e-hosted-video elementor-wrapper elementor-open-inline">
+                                                                    <video class="elementor-video" src="https://www.amp.tech/wp-content/uploads/2023/03/AMP-Clean-Energy-Ecosystem-cn.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload"></video>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-0a86b4e elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="0a86b4e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8fb9073" data-id="8fb9073" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-22a716d elementor-hidden-mobile elementor-widget elementor-widget-html" data-id="22a716d" data-element_type="widget" data-widget_type="html.default">
+                                                            <div class="elementor-widget-container">
+                                                                <img fetchpriority="high" decoding="async" width="800" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20500'%3E%3C/svg%3E" class="attachment-full size-full wp-image-19763" alt="AMP Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2023/04/AMP-Energy-Management-System-1.svg"><noscript><img fetchpriority="high" decoding="async" width="800" height="500" src="https://www.amp.tech/wp-content/uploads/2023/04/AMP-Energy-Management-System-1.svg" class="attachment-full size-full wp-image-19763" alt="AMP Energy Management System"></noscript> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-728733e" data-id="728733e" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-f87f981 elementor-widget elementor-widget-heading" data-id="f87f981" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <h2 class="elementor-heading-title elementor-size-default">AMP EMS</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-8a15a71 elementor-widget elementor-widget-heading" data-id="8a15a71" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <h2 class="elementor-heading-title elementor-size-default">Energy Management System</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-02b891a elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image" data-id="02b891a" data-element_type="widget" data-widget_type="image.default">
+                                                            <div class="elementor-widget-container">
+                                                                <style></style> <img width="730" height="614" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20730%20614'%3E%3C/svg%3E" title="Connected Energy Management System" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Redefining.webp" /><noscript><img width="730" height="614" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/08/Redefining.webp" title="Connected Energy Management System" alt="Connected Energy Management System" loading="lazy" /></noscript>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-27dd6b3 elementor-widget elementor-widget-text-editor" data-id="27dd6b3" data-element_type="widget" data-widget_type="text-editor.default">
+                                                            <div class="elementor-widget-container">
+                                                                <style></style>
+                                                                <p>Most people are excited about mobility becoming &#8216;electrified&#8217;. At AMP, we&#8217;re excited about electrification&#8217;s role, not just in mobility, but in our entire lives. We see mobility as a piece of a bigger puzzle to 360 degrees of clean energy.</p>
+                                                                <p>We have developed EMS, an all-in-one AMP <a href="https://www.amp.tech/connected-energy-management-system/">Energy Management System for e-mobility</a>, to harness this energy on the vehicle and through the vehicle to power our customers&#8217; needs. We call it a &#8216;Power Wall on Wheels.&#8217;</p>
+                                                                <p><span lang="EN-US" xml:lang="EN-US" data-scheme-color="@666666,," data-usefontface="true" data-contrast="none">We leverage know-how in connected <a href="https://www.amp.tech/battery-management-system/">battery management</a>, <a href="https://www.amp.tech/ev-charging-solutions/">charging solutions</a>, and cloud technologies to develop an ecosystem for next-generation technology in micro-mobility, automotive, ridesharing, drones, heavy industrial machinery, and high-speed and hypersonic transportation.</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-28676f7 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="28676f7" data-element_type="widget" data-widget_type="button.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-button-wrapper">
+                                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.amp.tech/connected-energy-management-system/">
+                                                                        <span class="elementor-button-content-wrapper">
+                                                                            <span class="elementor-button-text">LEARN MORE</span>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-4f97e77 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="4f97e77" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ed351a8" data-id="ed351a8" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-5cb67ce elementor-invisible elementor-widget elementor-widget-porto_stat_counter" data-id="5cb67ce" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="porto_stat_counter.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="stats-block stats-top">
+                                                                    <div class="porto-sicon-top">
+                                                                        <div id="porto-icon-474221039650a57939108f" class="porto-just-icon-wrapper porto-sicon-img" style=""><img decoding="async" class="img-icon" alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%201000'%3E%3C/svg%3E" width="1000" height="1000" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/05/software.svg" /><noscript><img decoding="async" class="img-icon" alt="" src="https://www.amp.tech/wp-content/uploads/2022/05/software.svg" width="1000" height="1000" /></noscript></div>
+                                                                    </div>
+                                                                    <div class="stats-desc">
+                                                                        <div class="counter_prefix mycust" style=" "><span id="hash-prefix">#</span></div>
+                                                                        <div id="counter_1896764204650a5793910f3" data-id="counter_1896764204650a5793910f3" class="stats-number" style=" " data-speed="3" data-counter-value="1" data-separator="none" data-decimal=".">0</div>
+                                                                        <div class="stats-text" style="">Global CCS Stack</div>
+                                                                    </div>
+                                                                </div>
+                                                                <script type="rocketlazyloadscript">
+                                                                    ( function() {
+		var porto_inc_counter_js = function() {
+			( function( $ ) {
+				if (typeof countUp == "undefined") {
+					var c = document.createElement("script");
+					c.src = "https://www.amp.tech/wp-content/plugins/porto-functionality/shortcodes/assets/js/countup.min.js";
+					if (!$('script[src="' + c.src + '"]').length) {
+						document.getElementsByTagName("body")[0].appendChild(c);
+					}
+					c = document.createElement("script");
+					c.src = "https://www.amp.tech/wp-content/plugins/porto-functionality/shortcodes/assets/js/countup-loader.min.js";
+					if (!$('script[src="' + c.src + '"]').length) {
+						document.getElementsByTagName("body")[0].appendChild(c);
+					}
+				}
+			} )( jQuery );
+		};
+
+		if ( window.theme && theme.isLoaded ) {
+			porto_inc_counter_js();
+		} else {
+			window.addEventListener( 'load', porto_inc_counter_js );
+		}
+	} )();
+</script>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-9b48067" data-id="9b48067" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-06824fe elementor-invisible elementor-widget elementor-widget-porto_stat_counter" data-id="06824fe" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="porto_stat_counter.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="stats-block stats-top">
+                                                                    <div class="porto-sicon-top">
+                                                                        <div id="porto-icon-877057218650a579395104" class="porto-just-icon-wrapper porto-sicon-img" style=""><img decoding="async" class="img-icon" alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%201000'%3E%3C/svg%3E" width="1000" height="1000" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/05/customers.svg" /><noscript><img decoding="async" class="img-icon" alt="" src="https://www.amp.tech/wp-content/uploads/2022/05/customers.svg" width="1000" height="1000" /></noscript></div>
+                                                                    </div>
+                                                                    <div class="stats-desc">
+                                                                        <div id="counter_254095808650a579395171" data-id="counter_254095808650a579395171" class="stats-number" style=" " data-speed="3" data-counter-value="100" data-separator="none" data-decimal="none">0</div>
+                                                                        <div class="counter_suffix mycust" style=" ">+</div>
+                                                                        <div class="stats-text" style="">Team Strength</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4b9f8a7" data-id="4b9f8a7" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-4ed5989 elementor-invisible elementor-widget elementor-widget-porto_stat_counter" data-id="4ed5989" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="porto_stat_counter.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="stats-block stats-top">
+                                                                    <div class="porto-sicon-top">
+                                                                        <div id="porto-icon-218603540650a579398eef" class="porto-just-icon-wrapper porto-sicon-img" style=""><img decoding="async" class="img-icon" alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%201000'%3E%3C/svg%3E" width="1000" height="1000" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/05/work-exp.svg" /><noscript><img decoding="async" class="img-icon" alt="" src="https://www.amp.tech/wp-content/uploads/2022/05/work-exp.svg" width="1000" height="1000" /></noscript></div>
+                                                                    </div>
+                                                                    <div class="stats-desc">
+                                                                        <div id="counter_1889140272650a579398f59" data-id="counter_1889140272650a579398f59" class="stats-number" style=" " data-speed="3" data-counter-value="300" data-separator="," data-decimal="none">0</div>
+                                                                        <div class="counter_suffix mycust" style=" ">+</div>
+                                                                        <div class="stats-text" style="">Years of Experience</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d26bce0" data-id="d26bce0" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-eb44130 elementor-invisible elementor-widget elementor-widget-porto_stat_counter" data-id="eb44130" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="porto_stat_counter.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="stats-block stats-top">
+                                                                    <div class="porto-sicon-top">
+                                                                        <div id="porto-icon-1527833059650a57939cf1d" class="porto-just-icon-wrapper porto-sicon-img" style=""><img decoding="async" class="img-icon" alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%201000'%3E%3C/svg%3E" width="1000" height="1000" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/05/vehicles-on-road.svg" /><noscript><img decoding="async" class="img-icon" alt="" src="https://www.amp.tech/wp-content/uploads/2022/05/vehicles-on-road.svg" width="1000" height="1000" /></noscript></div>
+                                                                    </div>
+                                                                    <div class="stats-desc">
+                                                                        <div id="counter_336058383650a57939cf86" data-id="counter_336058383650a57939cf86" class="stats-number" style=" " data-speed="3" data-counter-value="700000" data-separator="," data-decimal=".">0</div>
+                                                                        <div class="counter_suffix mycust" style=" ">+</div>
+                                                                        <div class="stats-text" style="">Vehicles on Road</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class="elementor-section elementor-top-section elementor-element elementor-element-b756b5f elementor-section-height-min-height elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle elementor-invisible" data-id="b756b5f" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500,&quot;background_background&quot;:&quot;classic&quot;}">
+                                            <div class="elementor-container elementor-column-gap-no">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-04eb49d" data-id="04eb49d" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-c36f3ae elementor-widget elementor-widget-video" data-id="c36f3ae" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=70ZSf0xg_bY&amp;t&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/www.amp.tech\/wp-content\/uploads\/2022\/08\/video-thumbnail.webp&quot;,&quot;id&quot;:15112,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;Energy Management for E-Mobility&quot;,&quot;source&quot;:&quot;library&quot;},&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-wrapper elementor-open-inline">
+                                                                    <div class="elementor-video"></div>
+                                                                    <div data-bg="https://www.amp.tech/wp-content/uploads/2022/08/video-thumbnail.webp" class="elementor-custom-embed-image-overlay rocket-lazyload" style="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-section elementor-top-section elementor-element elementor-element-c50d788 elementor-section-height-min-height elementor-section-full_width elementor-hidden-desktop elementor-section-height-default elementor-section-items-middle elementor-invisible" data-id="c50d788" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500,&quot;background_background&quot;:&quot;classic&quot;}">
+                                            <div class="elementor-container elementor-column-gap-no">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ec6959b" data-id="ec6959b" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-8af9154 elementor-widget elementor-widget-video" data-id="8af9154" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=70ZSf0xg_bY&amp;t&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/www.amp.tech\/wp-content\/uploads\/2022\/08\/video-thumbnail.webp&quot;,&quot;id&quot;:15112,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;Energy Continuum&quot;,&quot;source&quot;:&quot;library&quot;},&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-wrapper elementor-open-inline">
+                                                                    <div class="elementor-video"></div>
+                                                                    <div data-bg="https://www.amp.tech/wp-content/uploads/2022/08/video-thumbnail.webp" class="elementor-custom-embed-image-overlay rocket-lazyload" style="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-717be68 tab_content_sec batterymanagement_content elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="717be68" data-element_type="section" data-settings="{&quot;item_margin&quot;:0}">
+                                            <div class="elementor-container elementor-column-gap-no porto-carousel owl-carousel has-ccols ccols-1 emergy_management" data-plugin-options="{&quot;margin&quot;:0,&quot;items&quot;:1,&quot;nav&quot;:true,&quot;dots&quot;:false,&quot;loop&quot;:false,&quot;mouseDrag&quot;:true,&quot;touchDrag&quot;:true,&quot;themeConfig&quot;:true,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:3000,&quot;autoplayHoverPause&quot;:true}">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d864fc5" data-id="d864fc5" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-b6ced63 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b6ced63" data-element_type="section">
+                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5388fce" data-id="5388fce" data-element_type="column">
+                                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                                        <div class="elementor-element elementor-element-26ec9d0 elementor-widget elementor-widget-heading" data-id="26ec9d0" data-element_type="widget" data-widget_type="heading.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <h2 class="elementor-heading-title elementor-size-default"><b>Energy</b> Management Solutions
+                                                                                </h2>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="elementor-element elementor-element-0fc458f elementor-widget elementor-widget-text-editor" data-id="0fc458f" data-element_type="widget" data-widget_type="text-editor.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <p><span style="font-weight: 400;">With the roads gradually being taken over by electric vehicles, our engineering team developed state-of-the-art energy management solutions that accelerate development and maximize efficiency. Compared to existing solutions in the market, AMP’s energy management solutions provide more scalability (packaging considerations) and future-proof architecture (bi-directional capability) for e-mobility applications.</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d263197" data-id="d263197" data-element_type="column">
+                                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                                        <div class="elementor-element elementor-element-f55d8b2 elementor-widget elementor-widget-image" data-id="f55d8b2" data-element_type="widget" data-widget_type="image.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <img width="710" height="548" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20710%20548'%3E%3C/svg%3E" title="" alt="" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/battery-managment.png" /><noscript><img width="710" height="548" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/battery-managment.png" title="" alt="" loading="lazy" /></noscript> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-f8fc572 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f8fc572" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-01c99db" data-id="01c99db" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-fb186e0 past-exp elementor-widget elementor-widget-heading" data-id="fb186e0" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <h2 class="elementor-heading-title elementor-size-default">Our past experience at<br> <span id="custom_fancy_text" style="">Idea Lab</span><br> makes us special!</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-3cf743e lead elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-heading" data-id="3cf743e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;600&quot;}" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default">We are pioneers of intelligent energy management. With decades of experience in mobility and dozens of patents to their names, our team is unrivaled.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-4a5f6ee elementor-widget elementor-widget-shortcode" data-id="4a5f6ee" data-element_type="widget" data-widget_type="shortcode.default">
+                                                            <div class="elementor-widget-container">
+                                                                <style></style>
+                                                                <div class="cover-wrapper">
+                                                                    <div id="client-logos" class="owl-carousel text-center">
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="Parker Aerospace" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/parker.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/parker.png" alt="" data-title="Parker Aerospace" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="Tesla" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/tesla.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/tesla.png" alt="" data-title="Tesla" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="AeroVironment" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/aerovironment.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/aerovironment.png" alt="" data-title="AeroVironment" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="BTCPower" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/btcpower.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/btcpower.png" alt="" data-title="BTCPower" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="Creston" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/crestron.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/crestron.png" alt="" data-title="Creston" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="Honda" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/honda.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/honda.png" alt="" data-title="Honda" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="General Motors" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/gm-1.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/gm-1.png" alt="" data-title="General Motors" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="Idea Lab" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/idealab.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/idealab.png" alt="" data-title="Idea Lab" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="Johnson Controls" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/jci-1.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/jci-1.png" alt="" data-title="Johnson Controls" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="Faraday Future" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/ff-1.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/ff-1.png" alt="" data-title="Faraday Future" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="client-inners">
+                                                                                <img width="390" height="73" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%2073'%3E%3C/svg%3E" alt="" data-title="Toyota" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/03/toyota.png" /><noscript><img width="390" height="73" decoding="async" src="https://www.amp.tech/wp-content/uploads/2022/03/toyota.png" alt="" data-title="Toyota" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <script type="rocketlazyloadscript">
+                                                                    jQuery(document).ready(function() {
+
+var owl =   jQuery('#client-logos').owlCarousel({
+        loop:true,
+        margin:15,
+        nav:false,
+        dots:false,
+        autoplay: true,
+ 		autoplayTimeout: 3000,
+       smartSpeed: 3500,
+      animateIn: 'linear',
+      //animateOut: 'linear',
+        responsive:{
+            0:{
+                items:1,
+				center:true,
+				loop:true,
+				dots:false
+            },
+            600:{
+                items:3,
+				center:true,
+				loop:true,
+				dots:false
+            },
+            1000:{
+                items:5,
+				center:true
+         
+            }
+        }
+    });
+        jQuery('#custom_fancy_text').text(jQuery('#client-logos').find(".owl-item.active.center").find("img").data('title'));
+owl.on('changed.owl.carousel',function(elem){
+    jQuery('#custom_fancy_text').fadeOut('slow',function(){
+		var current = elem.item.index;
+		var selector = jQuery(elem.target).find(".owl-item").eq(current).find("img");
+		var  title = selector.data('title');
+		jQuery('#custom_fancy_text').text(title).fadeIn('slow');
+	});
+    
+});
+  });
+  
+</script>
+                                                                <div class="elementor-shortcode"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class="elementor-section elementor-top-section elementor-element elementor-element-aeab5a0 elementor-section-full_width testimonial pt30 pb40 elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="aeab5a0" data-element_type="section" id="c-testimonial" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;item_margin&quot;:0}">
+                                            <div class="elementor-container elementor-column-gap-no porto-carousel owl-carousel has-ccols ccols-1" data-plugin-options="{&quot;margin&quot;:0,&quot;items&quot;:1,&quot;nav&quot;:false,&quot;dots&quot;:false,&quot;loop&quot;:false,&quot;mouseDrag&quot;:true,&quot;touchDrag&quot;:true,&quot;themeConfig&quot;:true,&quot;autoplay&quot;:false}">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4966dc3" data-id="4966dc3" data-element_type="column" data-settings="{&quot;item_margin&quot;:0}">
+                                                    <div class="porto-carousel owl-carousel has-ccols ccols-1 elementor-widget-wrap elementor-element-populated" data-plugin-options="{&quot;margin&quot;:0,&quot;items&quot;:1,&quot;nav&quot;:false,&quot;dots&quot;:false,&quot;themeConfig&quot;:true,&quot;loop&quot;:false,&quot;mouseDrag&quot;:true,&quot;touchDrag&quot;:true,&quot;autoplay&quot;:false}">
+                                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-36dd31f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="36dd31f" data-element_type="section">
+                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-0ffc66a" data-id="0ffc66a" data-element_type="column" data-settings="{&quot;item_margin&quot;:0}">
+                                                                    <div class="porto-carousel owl-carousel has-ccols ccols-1 elementor-widget-wrap elementor-element-populated" data-plugin-options="{&quot;margin&quot;:0,&quot;items&quot;:1,&quot;nav&quot;:false,&quot;dots&quot;:true,&quot;themeConfig&quot;:true,&quot;loop&quot;:true,&quot;mouseDrag&quot;:true,&quot;touchDrag&quot;:true,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:5000,&quot;autoplayHoverPause&quot;:true}">
+                                                                        <div class="elementor-element elementor-element-7239af6 testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-dark mb-0 elementor-widget elementor-widget-testimonial" data-id="7239af6" data-element_type="widget" data-widget_type="testimonial.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <style></style>
+                                                                                <div class="elementor-testimonial-wrapper">
+                                                                                    <div class="elementor-testimonial-content">
+                                                                                        <p>"The world’s largest electric automotive manufacturers have leveraged the company’s peerless expertise from the very beginning of the EV wave, and numerous big names in mobility are quietly co-engineering solutions with the team at this very moment."</p>
+                                                                                        <h4>Alex Moore</h4>
+                                                                                        <p>Partner, 8VC</p>
+                                                                                    </div>
+                                                                                    <div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-top">
+                                                                                        <div class="elementor-testimonial-meta-inner">
+                                                                                            <div class="elementor-testimonial-image">
+                                                                                                <img decoding="async" width="144" height="144" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%20144'%3E%3C/svg%3E" class="attachment-full size-full wp-image-18306" alt="" data-lazy-src="https://www.amp.tech/wp-content/uploads/2023/03/Alexs-Testimonial-1.png" /><noscript><img decoding="async" width="144" height="144" src="https://www.amp.tech/wp-content/uploads/2023/03/Alexs-Testimonial-1.png" class="attachment-full size-full wp-image-18306" alt="" /></noscript> </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="elementor-element elementor-element-46f2790 testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-dark mb-0 elementor-widget elementor-widget-testimonial" data-id="46f2790" data-element_type="widget" data-widget_type="testimonial.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-testimonial-wrapper">
+                                                                                    <div class="elementor-testimonial-content">
+                                                                                        <p>"Pure electric vehicle platforms may soon become a commodity, and with AMP being one of the only companies anywhere to be able to engineer a complete energy management system, the company is poised to play an even larger role."</p>
+                                                                                        <h4>Milo Werner</h4>
+                                                                                        <p>Partner, Ajax Strategies</p>
+                                                                                    </div>
+                                                                                    <div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-top">
+                                                                                        <div class="elementor-testimonial-meta-inner">
+                                                                                            <div class="elementor-testimonial-image">
+                                                                                                <img decoding="async" width="144" height="144" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%20144'%3E%3C/svg%3E" class="attachment-full size-full wp-image-18305" alt="Milos-Testimonial" data-lazy-src="https://www.amp.tech/wp-content/uploads/2023/03/Milos-Testimonial-1.png" /><noscript><img decoding="async" width="144" height="144" src="https://www.amp.tech/wp-content/uploads/2023/03/Milos-Testimonial-1.png" class="attachment-full size-full wp-image-18305" alt="Milos-Testimonial" /></noscript> </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="elementor-element elementor-element-f84d432 testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-dark mb-0 elementor-invisible elementor-widget elementor-widget-testimonial" data-id="f84d432" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="testimonial.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-testimonial-wrapper">
+                                                                                    <div class="elementor-testimonial-content">
+                                                                                        <p>"The company’s expertise and intellectual property is second-to-none when it comes to combined energy management system and control – which is literally at the heart of all e-mobility."</p>
+                                                                                        <h4>Gabe Cunningham</h4>
+                                                                                        <p>Principal, Fontinalis</p>
+                                                                                    </div>
+                                                                                    <div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-top">
+                                                                                        <div class="elementor-testimonial-meta-inner">
+                                                                                            <div class="elementor-testimonial-image">
+                                                                                                <img decoding="async" width="513" height="513" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20513%20513'%3E%3C/svg%3E" class="attachment-full size-full wp-image-15216" alt="Gabe Cunningham" data-lazy-srcset="https://www.amp.tech/wp-content/uploads/2022/08/Gabes-Testimonial.png 513w, https://www.amp.tech/wp-content/uploads/2022/08/Gabes-Testimonial-400x400.png 400w, https://www.amp.tech/wp-content/uploads/2022/08/Gabes-Testimonial-367x367.png 367w" data-lazy-sizes="(max-width: 513px) 100vw, 513px" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Gabes-Testimonial.png" /><noscript><img decoding="async" width="513" height="513" src="https://www.amp.tech/wp-content/uploads/2022/08/Gabes-Testimonial.png" class="attachment-full size-full wp-image-15216" alt="Gabe Cunningham" srcset="https://www.amp.tech/wp-content/uploads/2022/08/Gabes-Testimonial.png 513w, https://www.amp.tech/wp-content/uploads/2022/08/Gabes-Testimonial-400x400.png 400w, https://www.amp.tech/wp-content/uploads/2022/08/Gabes-Testimonial-367x367.png 367w" sizes="(max-width: 513px) 100vw, 513px" /></noscript> </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-8a99998 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8a99998" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                            </div>
+                                        </section>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-5538a3e elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="5538a3e" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a6256c" data-id="8a6256c" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-288635e elementor-widget elementor-widget-heading" data-id="288635e" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <h2 class="elementor-heading-title elementor-size-default">ELECTRIFYING THE WORLD</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-ac26724 elementor-widget elementor-widget-heading" data-id="ac26724" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default">We celebrate the innovators and game changers in electrification!</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-14b6e62 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="14b6e62" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <h4 class="elementor-heading-title elementor-size-default">Connected Energy Management System</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-cfeb608 pb20 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cfeb608" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8c6fae7" data-id="8c6fae7" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-a40f07b elementor-widget elementor-widget-image-carousel" data-id="a40f07b" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;pause_on_hover&quot;:&quot;no&quot;,&quot;pause_on_interaction&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+                                                            <div class="elementor-widget-container">
+                                                                <style></style>
+                                                                <div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
+                                                                    <div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+                                                                            <figure class="swiper-slide-inner"><img width="546" height="560" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20546%20560'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Tesla-546x560.jpg" /><noscript><img width="546" height="560" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Tesla-546x560.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
+                                                                            <figure class="swiper-slide-inner"><img width="546" height="560" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20546%20560'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/VinFast-546x560.jpg" /><noscript><img width="546" height="560" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/VinFast-546x560.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
+                                                                            <figure class="swiper-slide-inner"><img width="546" height="560" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20546%20560'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Rolls-Royce-546x560.jpg" /><noscript><img width="546" height="560" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Rolls-Royce-546x560.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
+                                                                            <figure class="swiper-slide-inner"><img width="546" height="560" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20546%20560'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Ampaire-546x560.jpg" /><noscript><img width="546" height="560" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Ampaire-546x560.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+                                                                            <figure class="swiper-slide-inner"><img width="546" height="560" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20546%20560'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Archer-Aviation-546x560.jpg" /><noscript><img width="546" height="560" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Archer-Aviation-546x560.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+                                                                            <figure class="swiper-slide-inner"><img width="546" height="560" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20546%20560'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/John-Deere-546x560.jpg" /><noscript><img width="546" height="560" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/John-Deere-546x560.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-88d3a59 elementor-hidden-mobile" data-id="88d3a59" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-e96d6e5 elementor-hidden-mobile elementor-widget elementor-widget-image-carousel" data-id="e96d6e5" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;pause_on_hover&quot;:&quot;no&quot;,&quot;pause_on_interaction&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
+                                                                    <div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Polestar" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Polestar.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Polestar.jpg" alt="Polestar" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Ford Lightning" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Ford-Lightning.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Ford-Lightning.jpg" alt="Ford Lightning" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Ford Mustang" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Ford-Mustang.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Ford-Mustang.jpg" alt="Ford Mustang" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Jaguar" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Jaquar.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Jaquar.jpg" alt="Jaguar" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Lucid" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Lucid-1.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Lucid-1.jpg" alt="Lucid" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Porsche" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Porsche.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Porsche.jpg" alt="Porsche" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Fisker" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Fisker.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Fisker.jpg" alt="Fisker" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Delorean" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Delorean.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Delorean.jpg" alt="Delorean" /></noscript></figure>
+                                                                        </div>
+                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 of 9">
+                                                                            <figure class="swiper-slide-inner"><img width="545" height="279" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20545%20279'%3E%3C/svg%3E" alt="Caterpillar" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Caterpillar.jpg" /><noscript><img width="545" height="279" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Caterpillar.jpg" alt="Caterpillar" /></noscript></figure>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-6a4ca46 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6a4ca46" data-element_type="section">
+                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b046df5" data-id="b046df5" data-element_type="column">
+                                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                                        <div class="elementor-element elementor-element-56b343c elementor-hidden-mobile elementor-widget elementor-widget-image-carousel" data-id="56b343c" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;pause_on_hover&quot;:&quot;no&quot;,&quot;pause_on_interaction&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
+                                                                                    <div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Amazon.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Amazon.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Bajaj-Chetak.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Bajaj-Chetak.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Zero-Motorcycles.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Zero-Motorcycles.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Gogoro.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Gogoro.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Harley-Davidson.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Harley-Davidson.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Lime-Scooters.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Lime-Scooters.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-367c97d" data-id="367c97d" data-element_type="column">
+                                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                                        <div class="elementor-element elementor-element-4677722 elementor-hidden-mobile elementor-widget elementor-widget-image-carousel" data-id="4677722" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;pause_on_hover&quot;:&quot;no&quot;,&quot;pause_on_interaction&quot;:&quot;no&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
+                                                                                    <div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 7">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Virgin-Hyperloop-1.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Virgin-Hyperloop-1.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 7">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Zoox-1.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Zoox-1.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 7">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Samsung.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Samsung.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 7">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/Sonnen.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/Sonnen.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 7">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/08/CATL.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/08/CATL.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 7">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/09/LG-Chemistry.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/09/LG-Chemistry.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 7">
+                                                                                            <figure class="swiper-slide-inner"><img width="259" height="259" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20259%20259'%3E%3C/svg%3E" alt="Connected Energy Management System" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/09/NextEra.jpg" /><noscript><img width="259" height="259" decoding="async" class="swiper-slide-image" src="https://www.amp.tech/wp-content/uploads/2022/09/NextEra.jpg" alt="Connected Energy Management System" /></noscript></figure>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-897deed pt60 pb40 ecosystem elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="897deed" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-37e461e hm-ctas" data-id="37e461e" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-0910db6 mb10 pb0 elementor-widget elementor-widget-heading" data-id="0910db6" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <h4 class="elementor-heading-title elementor-size-default">Get to know about the latest in and around AMP.</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-a1ec0b3 elementor-widget elementor-widget-text-editor" data-id="a1ec0b3" data-element_type="widget" data-widget_type="text-editor.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p>Go to our media page now!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-11a5617 tar-desk  pt0" data-id="11a5617" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-c6db0ee elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="c6db0ee" data-element_type="widget" data-widget_type="button.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-button-wrapper">
+                                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.amp.tech/media/">
+                                                                        <span class="elementor-button-content-wrapper">
+                                                                            <span class="elementor-button-text">AMP MEDIA</span>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div><!-- end main content -->
+                </div>
+            </div>
+        </div><!-- end main -->
+        <div class="footer-wrapper">
+            <footer id="footer" class="footer footer-builder">
+                <style></style>
+                <div class="porto-block elementor elementor-9751" data-id="9751">
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-b5ee3fe elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b5ee3fe" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d9c8ca1" data-id="d9c8ca1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-83323ea elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-html" data-id="83323ea" data-element_type="widget" data-widget_type="html.default">
+                                        <div class="elementor-widget-container">
+                                            <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+                                                function ZFAdvLead(){
+}
+ZFAdvLead.utmPValObj = ZFAdvLead.utmPValObj || {};
+
+ZFAdvLead.utmPNameArr = new Array('utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid');ZFAdvLead.utmcustPNameArr = new Array('gclid');ZFAdvLead.isSameDomian = false;
+
+ZFAdvLead.prototype.zfautm_sC = function( paramName,path,domain,secure ){
+  var value = ZFAdvLead.utmPValObj[paramName];
+  if ( typeof value !== "undefined" && value !== null ){
+    var cookieStr = paramName + "=" + encodeURIComponent( value );
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate()+7);
+    cookieStr += "; expires=" + exdate.toGMTString();
+    cookieStr += "; path=/";
+    if ( domain ) {
+      cookieStr += "; domain=" + encodeURIComponent( domain );
+    }
+    if ( secure ) {
+      cookieStr += "; secure";
+    }
+    document.cookie = cookieStr;
+  }
+};
+ZFAdvLead.prototype.zfautm_ini = function (){
+  this.zfautm_bscPCap();
+  var url_search = document.location.search;
+  for (var i = 0; i < ZFAdvLead.utmcustPNameArr.length ; i ++){
+    var zf_pN = ZFAdvLead.utmcustPNameArr[i];
+    var zf_pV;
+    if ( zf_pN == 'referrername' ) {
+      zf_pV = ( document.location.href || '' ).slice( 0, 1500 );
+    } else {
+      zf_pV = this.zfautm_gP(url_search, zf_pN);
+      if (zf_pV == undefined || zf_pV == ''){
+          zf_pV = this.zfautm_gC(zf_pN);
+      }
+    }
+    if ( typeof zf_pV !== "undefined" && zf_pV !== null & zf_pV != "" ) {
+      ZFAdvLead.utmPValObj[ zf_pN ] = zf_pV;
+    }
+  }
+  for (var pkey in ZFAdvLead.utmPValObj) {
+    this.zfautm_sC(pkey);
+  }
+};
+ZFAdvLead.prototype.zfautm_bscPCap = function () {
+  var trafSrc = this.zfautm_calcTrafSrc();
+  if ( trafSrc.source != "" ) {
+    ZFAdvLead.utmPValObj.utm_source = trafSrc.source;
+  }
+  if ( trafSrc.medium != "" ) {
+    ZFAdvLead.utmPValObj.utm_medium = trafSrc.medium;
+  }
+  if ( trafSrc.campaign != "" ) {
+    ZFAdvLead.utmPValObj.utm_campaign = trafSrc.campaign;
+  }
+  if ( trafSrc.term != "" ) {
+    ZFAdvLead.utmPValObj.utm_term = trafSrc.term;
+  }
+  if ( trafSrc.content != "" ) {
+    ZFAdvLead.utmPValObj.utm_content = trafSrc.content;
+  }
+}
+ZFAdvLead.prototype.zfautm_calcTrafSrc = function() {
+  var u1='', u2='', u3='', u4='', u5='';
+  var search_engines = [['bing', 'q'], ['google', 'q'], ['yahoo', 'q'], ['baidu', 'q'], ['yandex', 'q'], ['ask', 'q']]; //List of search engines 
+  var ref = document.referrer;
+  ref = ref.substr(ref.indexOf('//')+2);
+  ref_domain = ref;
+  ref_path = '/';
+  ref_search = '';
+
+  // Checks for campaign parameters
+  var url_search = document.location.search;
+  if(url_search.indexOf('utm_source') > -1 || url_search.indexOf('utm_medium') > -1 || url_search.indexOf('utm_campaign') > -1 || url_search.indexOf('utm_term') > -1 || url_search.indexOf('utm_content') > -1) {
+    u1 = this.zfautm_gP(url_search, 'utm_source'); 
+    u2 = this.zfautm_gP(url_search, 'utm_medium'); 
+    u3 = this.zfautm_gP(url_search, 'utm_campaign'); 
+    u4 = this.zfautm_gP(url_search, 'utm_term'); 
+    u5 = this.zfautm_gP(url_search, 'utm_content'); 
+  } else if ( this.zfautm_gP(url_search, 'gclid')) {
+    u1 = 'Google Ads'; 
+    u2 = 'cpc'; 
+    u3 = '(not set)'; 
+    if ( !ZFAdvLead.utmcustPNameArr.includes('gclid') ) {
+      ZFAdvLead.utmcustPNameArr.push('gclid');
+    }
+  } else if(ref) {
+    var r_u1 = this.zfautm_gC('utm_source'); 
+    var r_u2 = this.zfautm_gC('utm_medium'); 
+    var r_u3 = this.zfautm_gC('utm_campaign'); 
+    var r_u4 = this.zfautm_gC('utm_term'); 
+    var r_u5 = this.zfautm_gC('utm_content'); 
+    if ( typeof r_u1 === "undefined" && typeof r_u2 === "undefined" && typeof r_u3 === "undefined" && typeof r_u4 === "undefined" && typeof r_u5 === "undefined") {
+      // separate domain, path and query parameters
+      if (ref.indexOf('/') > -1) {
+        ref_domain = ref.substr(0,ref.indexOf('/'));
+        ref_path = ref.substr(ref.indexOf('/'));
+        if (ref_path.indexOf('?') > -1) {
+          ref_search = ref_path.substr(ref_path.indexOf('?'));
+          ref_path = ref_path.substr(0, ref_path.indexOf('?'));
+        }
+      }
+      u2 = 'referral'; 
+      u1 = ref_domain;                    
+    // Extract term for organic source
+      for (var i=0; i<search_engines.length; i++){
+        if(ref_domain.indexOf(search_engines[i][0]) > -1){
+          u2 = 'organic'; 
+          u1 = search_engines[i][0];
+          u4 = this.zfautm_gP(ref_search, search_engines[i][1]) || '(not provided)';
+          break;
+        }
+      }
+    } else {
+      if ( typeof r_u1 !== "undefined" ) {
+        u1 = r_u1;
+      }
+      if ( typeof r_u2 !== "undefined" ) {
+          u2 = r_u2;
+      }
+      if ( typeof r_u3 !== "undefined" ) {
+        u3 = r_u3;
+      }
+      if ( typeof r_u4 !== "undefined" ) {
+        u4 = r_u4;
+      }
+      if ( typeof r_u5 !== "undefined" ) {
+        u5 = r_u5;
+      }
+    }
+  } else {
+    var r_u1 = this.zfautm_gC('utm_source'); 
+    var r_u2 = this.zfautm_gC('utm_medium'); 
+    var r_u3 = this.zfautm_gC('utm_campaign'); 
+    var r_u4 = this.zfautm_gC('utm_term'); 
+    var r_u5 = this.zfautm_gC('utm_content'); 
+    if ( typeof r_u1 === "undefined" && typeof r_u2 === "undefined" && typeof r_u3 === "undefined" && typeof r_u4 === "undefined" && typeof r_u5 === "undefined") {
+      var locRef = document.location.href;
+      locRef = locRef.substr(locRef.indexOf('//')+2);
+      if (locRef.indexOf('/') > -1) {
+        locRef = locRef.substr(0,locRef.indexOf('/'));
+      }
+      u1 = locRef;
+      u2 = 'referral'; 
+    } else {
+      if ( typeof r_u1 !== "undefined" ) {
+        u1 = r_u1;
+      }
+      if ( typeof r_u2 !== "undefined" ) {
+        u2 = r_u2;
+      }
+      if ( typeof r_u3 !== "undefined" ) {
+        u3 = r_u3;
+      }
+      if ( typeof r_u4 !== "undefined" ) {
+        u4 = r_u4;
+      }
+      if ( typeof r_u5 !== "undefined" ) {
+        u5 = r_u5;
+      }
+    }
+  }
+  return {
+    'source'  : u1, 
+    'medium'  : u2, 
+    'campaign': u3, 
+    'term'    : u4, 
+    'content' : u5 
+  };
+}
+ZFAdvLead.prototype.zfautm_gP = function(s, q) {
+  try{
+      var match = s.match('[?&]' + q + '=([^&]+)');
+      return match ? decodeURIComponent(match[1]) : '';
+  } catch(e){
+    return '';  
+  }
+}
+ZFAdvLead.prototype.zfautm_gC = function( cookieName ){
+  var cookieArr = document.cookie.split('; ');
+  for ( var i = 0 ; i < cookieArr.length ; i ++ ){
+    var cookieVals = cookieArr[i].split('=');
+      if ( cookieVals[0] === cookieName && cookieVals[1] ) {
+        return decodeURIComponent(cookieVals[1]);
+      }
+  }
+};
+ZFAdvLead.prototype.zfautm_gC_enc = function( cookieName ){
+  var cookieArr = document.cookie.split('; ');
+  for ( var i = 0 ; i < cookieArr.length ; i ++ ){
+    var cookieVals = cookieArr[i].split('=');
+      if ( cookieVals[0] === cookieName && cookieVals[1] ) {
+        return cookieVals[1];
+      }
+  }
+};
+ZFAdvLead.prototype.zfautm_iframeSprt = function () {
+  var zf_frame = document.getElementsByTagName("iframe");
+  for(var i = 0; i < zf_frame.length; ++i){
+    if((zf_frame[i].src).indexOf('formperma') > 0 ){
+      var zf_src = zf_frame[i].src;
+      for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+        var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+        utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm;
+        var utmVal = this.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+        if ( typeof utmVal !== "undefined" ) {
+          if ( utmVal != "" ){
+            if(zf_src.indexOf('?') > 0){
+              zf_src = zf_src+'&'+utmPm+'='+ utmVal;
+            }else{
+              zf_src = zf_src+'?'+utmPm+'='+ utmVal;
+            }
+          }
+        }
+      }
+      if ( zf_frame[i].src.length < zf_src.length ) {
+        zf_frame[i].src = zf_src;
+      }
+    }
+  }
+};
+ZFAdvLead.prototype.zfautm_DHtmlSprt = function () {
+  var zf_formsArr = document.forms;
+  for ( var frmInd = 0 ; frmInd < zf_formsArr.length ; frmInd ++ ) {
+    var zf_form_act = zf_formsArr[frmInd].action;
+      if ( zf_form_act && zf_form_act.indexOf('formperma') > 0 ){
+        for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+          var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+          var utmVal = this.zfautm_gC( ZFAdvLead.utmPNameArr[ prmIdx ] );
+          if ( typeof utmVal !== "undefined" ) {
+            if ( utmVal != "" ) {
+              var fieldObj = zf_formsArr[frmInd][utmPm];
+            if ( fieldObj ) {
+              fieldObj.value = utmVal;
+            }
+          }
+        }
+      }
+    }
+  }
+};
+ZFAdvLead.prototype.zfautm_jsEmbedSprt = function ( id ) {
+  document.getElementById('zforms_iframe_id').removeAttribute("onload");
+  var jsEmbdFrm = document.getElementById("zforms_iframe_id");
+  var embdSrc = jsEmbdFrm.src;
+  for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+    var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+    utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm;
+    var utmVal = this.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+    if ( typeof utmVal !== "undefined" ) {
+      if ( utmVal != "" ) {
+        if(embdSrc.indexOf('?') > 0){
+                    embdSrc = embdSrc+'&'+utmPm+'='+utmVal;
+        }else{
+            embdSrc = embdSrc+'?'+utmPm+'='+utmVal;
+        }
+      }
+    }
+  }
+  jsEmbdFrm.src = embdSrc;
+};
+var zfutm_zfAdvLead = new ZFAdvLead();
+zfutm_zfAdvLead.zfautm_ini();
+if( document.readyState == "complete" ){
+    zfutm_zfAdvLead.zfautm_iframeSprt();
+    zfutm_zfAdvLead.zfautm_DHtmlSprt();
+} else {
+  window.addEventListener('load', function (){
+        zfutm_zfAdvLead.zfautm_iframeSprt();
+        zfutm_zfAdvLead.zfautm_DHtmlSprt();
+  }, false);
+}
+</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-5946820 main-footer elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5946820" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-21bcf10 footer-logo foot-column" data-id="21bcf10" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-a04278d footer-lo elementor-widget elementor-widget-image" data-id="a04278d" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <a href="https://www.amp.tech/">
+                                                <img width="1024" height="158" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20158'%3E%3C/svg%3E" class="attachment-large size-large wp-image-9752" alt="AMP Logo" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/05/AMP-Logo-Footer-1.svg" /><noscript><img width="1024" height="158" src="https://www.amp.tech/wp-content/uploads/2022/05/AMP-Logo-Footer-1.svg" class="attachment-large size-large wp-image-9752" alt="AMP Logo" /></noscript> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-010386f footer-address foot-column" data-id="010386f" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-44e8663 elementor-widget elementor-widget-heading" data-id="44e8663" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h5 class="elementor-heading-title elementor-size-default">GET IN TOUCH</h5>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-cb9a2dc elementor-widget elementor-widget-text-editor" data-id="cb9a2dc" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            11643 Telegraph Road<br />Santa Fe Springs, CA 90670 </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-cd97ed9 elementor-widget elementor-widget-text-editor" data-id="cd97ed9" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <a href="mailto:connect@amp.tech" target="_blank" rel="noopener">connect@amp.tech</a> </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-fe51c81 elementor-widget elementor-widget-text-editor" data-id="fe51c81" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <a href="tel:+18008947104">1.800.894.7104</a> </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-3c9c8c0 elementor-shape-circle elementor-grid-2 e-grid-align-left foot-social elementor-widget elementor-widget-social-icons" data-id="3c9c8c0" data-element_type="widget" data-widget_type="social-icons.default">
+                                        <div class="elementor-widget-container">
+                                            <style></style>
+                                            <div class="elementor-social-icons-wrapper elementor-grid">
+                                                <span class="elementor-grid-item">
+                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-f70b8b0" href="https://www.linkedin.com/company/amp-energy-management" target="_blank">
+                                                        <span class="elementor-screen-only">Linkedin</span>
+                                                        <i class="fab fa-linkedin"></i> </a>
+                                                </span>
+                                                <span class="elementor-grid-item">
+                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-1019352" href="https://www.youtube.com/channel/UC3pFbFhtsveLrGwlAaxMeZw" target="_blank">
+                                                        <span class="elementor-screen-only">Youtube</span>
+                                                        <i class="fab fa-youtube"></i> </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a831ab1 fmenu foot-column" data-id="a831ab1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-00fcd9f elementor-widget elementor-widget-heading" data-id="00fcd9f" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h5 class="elementor-heading-title elementor-size-default">SITE MAP</h5>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-260adee footer-menu elementor-widget elementor-widget-html" data-id="260adee" data-element_type="widget" data-widget_type="html.default">
+                                        <div class="elementor-widget-container">
+                                            <a href="https://www.amp.tech/connected-energy-management-system/">EMS</a>
+                                            <a href="https://www.amp.tech/ev-charging-solutions/">Charging</a>
+                                            <a href="https://www.amp.tech/energy-management-system-for-ev/">Energy Management</a>
+                                            <a href="https://www.amp.tech/battery-management-system/">Battery Management</a>
+                                            <a href="https://www.amp.tech/media/">Media</a>
+                                            <a href="https://www.amp.tech/about-us/">About Us</a>
+                                            <a href="https://www.amp.tech/careers/">Careers</a>
+                                            <a href="https://www.amp.tech/contact-us/">Contact Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-14679d7 foot-news footform foot-column" data-id="14679d7" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-4d2cc0b elementor-widget elementor-widget-heading" data-id="4d2cc0b" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h5 class="elementor-heading-title elementor-size-default">STAY UPDATED</h5>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-930ba93 elementor-widget elementor-widget-text-editor" data-id="930ba93" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>Get all the latest updates from AMP.</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-0eca0de elementor-widget elementor-widget-text-editor" data-id="0eca0de" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>Subscribe to our newsletter by clicking on the button below.</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-5ed6bc9 foot-subscibe elementor-widget elementor-widget-html" data-id="5ed6bc9" data-element_type="widget" data-widget_type="html.default">
+                                        <div class="elementor-widget-container">
+                                            <style></style>
+                                            <button id="zf_button_751359" style="display: none;">SUBSCRIBE</button>
+                                            <script type="rocketlazyloadscript" data-rocket-type="text/javascript">(function() {
+	try{
+
+			if( document.readyState == "complete" ){ 
+				onloadActions_751359();
+			}  else {
+			  	window.addEventListener('load', function (){
+			  		onloadActions_751359();
+			  	}, false);
+			}
+
+			function onloadActions_751359(){
+				constructDiv_751359();
+				loadZForm_751359();
+			}
+
+			function constructDiv_751359(){
+				var iframeDiv = document.createElement("div");
+				iframeDiv.setAttribute('id','GY_FIB6WvMM0Ckly4F6lea_M-tKjnBsw1OV7Yez4Bjs_751359');
+				iframeDiv.setAttribute('class','zf_main_id_751359');
+
+				var closeFormDiv = document.createElement("div");
+				closeFormDiv.setAttribute('id','deleteform_751359');
+				closeFormDiv.setAttribute('class','zf_lb_closeform_751359');
+				
+
+				var containerDiv = document.createElement("div");
+				containerDiv.setAttribute('id','containerDiv_751359');
+				containerDiv.setAttribute('class','zf_lB_Container_751359 ');
+				containerDiv.appendChild(iframeDiv);
+				containerDiv.appendChild(closeFormDiv);
+				
+				var wrapperDiv = document.createElement("div");
+				wrapperDiv.setAttribute('class','zf_lB_Wrapper_751359');
+				wrapperDiv.appendChild(containerDiv);
+
+
+				var dimmerDiv = document.createElement("div");
+				dimmerDiv.setAttribute('class','zf_lB_Dimmer_751359');
+				dimmerDiv.setAttribute('elname','popup_box');
+
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute('id','formsLightBox_751359');
+				mainDiv.style.display = "none";
+				mainDiv.appendChild(wrapperDiv);
+				mainDiv.appendChild(dimmerDiv);
+
+				document.body.appendChild(mainDiv);
+
+			}
+
+			function showZForm_751359(){
+				var iframe = document.getElementById("GY_FIB6WvMM0Ckly4F6lea_M-tKjnBsw1OV7Yez4Bjs_751359").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					loadZForm_751359();
+					
+				} 
+				document.getElementById("formsLightBox_751359").style.display = "block"; 
+				document.body.style.overflow = "hidden";
+			}
+
+			function loadZForm_751359() {
+				var iframe = document.getElementById("GY_FIB6WvMM0Ckly4F6lea_M-tKjnBsw1OV7Yez4Bjs_751359").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					var f = document.createElement("iframe");
+					f.src = getsrcurlZForm_751359('https://forms.zohopublic.in/prafullwani/form/NLSubscriptionFooterNew/formperma/GY_FIB6WvMM0Ckly4F6lea_M-tKjnBsw1OV7Yez4Bjs');
+					f.style.border="none";
+					f.style.minWidth="100%";
+					f.style.overflow="hidden";
+					var d = document.getElementById("GY_FIB6WvMM0Ckly4F6lea_M-tKjnBsw1OV7Yez4Bjs_751359");
+					d.appendChild(f);
+
+					var deleteForm = document.getElementById("deleteform_751359");
+					deleteForm.onclick = function deleteZForm_751359() {
+						var divCont = document.getElementById("formsLightBox_751359");
+						divCont.style.display="none";
+						document.body.style.overflow = "";
+
+						var iframe = document.getElementById("GY_FIB6WvMM0Ckly4F6lea_M-tKjnBsw1OV7Yez4Bjs_751359").getElementsByTagName("iframe")[0];
+						iframe.remove();
+					}
+
+					
+
+					window.addEventListener('message', function (){
+						var evntData = event.data;
+						if( evntData && evntData.constructor == String ){
+							var zf_ifrm_data = evntData.split("|");
+							if ( zf_ifrm_data.length == 2 ) {
+								var zf_perma = zf_ifrm_data[0];
+								var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+								var iframe = document.getElementById("GY_FIB6WvMM0Ckly4F6lea_M-tKjnBsw1OV7Yez4Bjs_751359").getElementsByTagName("iframe")[0];
+								if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+									var prevIframeHeight = iframe.style.height;
+									if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+									iframe.style.minHeight = zf_ifrm_ht_nw;
+										var containerDiv = document.getElementById("containerDiv_751359");
+										containerDiv.style.height=zf_ifrm_ht_nw;
+									}
+								}
+							}
+						}
+
+					}, false);
+				}
+			}
+
+			
+
+			function getsrcurlZForm_751359(zf_src) {
+				try {
+					if ( typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+
+					if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+				}catch(e){}
+				return zf_src;
+			}
+			var buttonElem = document.getElementById("zf_button_751359");
+			buttonElem.style.display = "block";
+			buttonElem.addEventListener("click", showZForm_751359);
+		
+			
+	}catch(e){}
+})();
+</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-a7bec72 footer-copy elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a7bec72" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-29bfbc7 foot-column" data-id="29bfbc7" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-8a2579f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8a2579f" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f5f8dd7 footer-copy-l" data-id="f5f8dd7" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-943c549 elementor-widget elementor-widget-text-editor" data-id="943c549" data-element_type="widget" data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>© AMP 2023 | All Rights Reserved</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0da01ae footer-copy-r foot-column" data-id="0da01ae" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-76308e3 elementor-widget elementor-widget-text-editor" data-id="76308e3" data-element_type="widget" data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p><a href="https://www.amp.tech/our-privacy-policy/">Privacy &amp; GDPR Policy </a>|&nbsp;<a href="https://www.amp.tech/our-cookie-policy/">Cookie Policy</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <script type="rocketlazyloadscript">jQuery(".menu-item").hover(function(e){
+	if(jQuery(this).hasClass('viewed') == false){
+		jQuery(this).find('.popup').css('display','none');
+	}
+	//alert();
+},function(){
+	if(jQuery(this).hasClass('viewed')){
+		jQuery(this).find('.popup').css({"display": "block", "top": "100%"});
+	}	
+	//alert();
+});
+
+jQuery(".menu-item").click(function(e){
+	var clicker = jQuery(this);
+	var popup	= jQuery(this).find('.popup');
+	if(popup.is(":visible") == true){
+		popup.css('display','none');
+		clicker.removeClass('viewed');
+	} else {
+		popup.css('display','block');
+		clicker.addClass('viewed');
+	}
+	//alert();
+});</script>
+            </footer>
+        </div>
+    </div><!-- end wrapper -->
+    <div class="btn floatcta">
+        <style></style>
+        <div class="float-cta">
+            <p id="zf_button_454369" class="flO-cta" style="display: none;"><img width="1000" height="1000" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%201000'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.amp.tech/wp-content/uploads/2022/06/button-icon.svg" /><noscript><img width="1000" height="1000" src="https://www.amp.tech/wp-content/uploads/2022/06/button-icon.svg" alt="" /></noscript> </p>
+        </div>
+        <script type="rocketlazyloadscript" data-rocket-type="text/javascript">(function() {
+	try{
+
+			if( document.readyState == "complete" ){ 
+				onloadActions_454369();
+			}  else {
+			  	window.addEventListener('load', function (){
+			  		onloadActions_454369();
+			  	}, false);
+			}
+
+			function onloadActions_454369(){
+				constructDiv_454369();
+				loadZForm_454369();
+			}
+
+			function constructDiv_454369(){
+				var iframeDiv = document.createElement("div");
+				iframeDiv.setAttribute('id','_9CUQO98p4JHPcpTnvzck8ZAJr2c2bY7QwG3AZdlOXs_454369');
+				iframeDiv.setAttribute('class','zf_main_id_454369');
+
+				var closeFormDiv = document.createElement("div");
+				closeFormDiv.setAttribute('id','deleteform_454369');
+				closeFormDiv.setAttribute('class','zf_lb_closeform_454369');
+				
+
+				var containerDiv = document.createElement("div");
+				containerDiv.setAttribute('id','containerDiv_454369');
+				containerDiv.setAttribute('class','zf_lB_Container_454369');
+				containerDiv.appendChild(iframeDiv);
+				containerDiv.appendChild(closeFormDiv);
+
+
+				var wrapperDiv = document.createElement("div");
+				wrapperDiv.setAttribute('class','zf_lB_Wrapper_454369');
+				wrapperDiv.appendChild(containerDiv);
+
+
+				var dimmerDiv = document.createElement("div");
+				dimmerDiv.setAttribute('class','zf_lB_Dimmer_454369');
+				dimmerDiv.setAttribute('elname','popup_box');
+
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute('id','formsLightBox_454369');
+				mainDiv.style.display = "none";
+				mainDiv.appendChild(wrapperDiv);
+				mainDiv.appendChild(dimmerDiv);
+
+				document.body.appendChild(mainDiv);
+
+			}
+
+			function showZForm_454369(){
+				var iframe = document.getElementById("_9CUQO98p4JHPcpTnvzck8ZAJr2c2bY7QwG3AZdlOXs_454369").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					loadZForm_454369();
+					
+				} 
+				document.getElementById("formsLightBox_454369").style.display = "block"; 
+				document.body.style.overflow = "hidden";
+			}
+
+			function loadZForm_454369() {
+				var iframe = document.getElementById("_9CUQO98p4JHPcpTnvzck8ZAJr2c2bY7QwG3AZdlOXs_454369").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					var f = document.createElement("iframe");
+					f.src = getsrcurlZForm_454369('https://forms.zohopublic.in/prafullwani/form/ConnectwithUs1/formperma/_9CUQO98p4JHPcpTnvzck8ZAJr2c2bY7QwG3AZdlOXs');
+					f.style.border="none";
+					f.style.minHeight="650px";
+					f.style.minWidth="100%";
+					f.style.overflow="hidden";
+					var d = document.getElementById("_9CUQO98p4JHPcpTnvzck8ZAJr2c2bY7QwG3AZdlOXs_454369");
+					d.appendChild(f);
+
+					var deleteForm = document.getElementById("deleteform_454369");
+					deleteForm.onclick = function deleteZForm_454369() {
+						var divCont = document.getElementById("formsLightBox_454369");
+						divCont.style.display="none";
+
+						document.body.style.overflow = "";
+
+						var iframe = document.getElementById("_9CUQO98p4JHPcpTnvzck8ZAJr2c2bY7QwG3AZdlOXs_454369").getElementsByTagName("iframe")[0];
+						iframe.remove();
+					}
+
+
+					window.addEventListener('message', function (){
+						var evntData = event.data;
+						if( evntData && evntData.constructor == String ){
+							var zf_ifrm_data = evntData.split("|");
+							if ( zf_ifrm_data.length == 2 ) {
+								var zf_perma = zf_ifrm_data[0];
+								var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+								var iframe = document.getElementById("_9CUQO98p4JHPcpTnvzck8ZAJr2c2bY7QwG3AZdlOXs_454369").getElementsByTagName("iframe")[0];
+								if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+									var prevIframeHeight = iframe.style.height;
+									if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+									iframe.style.minHeight = zf_ifrm_ht_nw;
+										var containerDiv = document.getElementById("containerDiv_454369");
+										containerDiv.style.height=zf_ifrm_ht_nw;
+									}
+								}
+							}
+						}
+
+					}, false);
+				}
+			}
+
+			
+
+			function getsrcurlZForm_454369(zf_src) {
+				try {
+					if ( typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+
+					if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+				}catch(e){}
+				return zf_src;
+			}
+			var buttonElem = document.getElementById("zf_button_454369");
+			buttonElem.style.display = "block";
+			buttonElem.addEventListener("click", showZForm_454369);
+		
+			
+	}catch(e){}
+})();
+</script>
+    </div>
+    <script type="rocketlazyloadscript">
+        ////career loadmore/////
+ jQuery(function () {
+		jQuery(".resumator-job").slice(0, 2).show();
+		jQuery("body").on('click touchstart', '.load-more', function (e) {
+			e.preventDefault();
+			jQuery(".resumator-job:hidden").slice(0, 0).slideDown();
+			if (jQuery(".resumator-job:hidden").length == 0) {
+				jQuery(".load-more").css('visibility', 'hidden');
+			}
+			jQuery('html,body').animate({
+				scrollTop: $(this).offset().top
+			}, 2000);
+		});
+	}); 
+////////
+jQuery(function() {
+  // Owl Carousel
+  var owl = jQuery(".press-cor-slide");
+  owl.owlCarousel({
+//     items: 3,
+    margin: 10,
+    loop: false,
+    nav: true,
+	  responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+	  }
+  });
+  });
+//////////////
+jQuery('button, .float-cta p').css({
+ display: 'block'
+});
+ 
+   
+</script>
+    <script type="rocketlazyloadscript">
+        jQuery('.press-cor-slide').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+//////////////
+
+ 
+</script>
+    <script type="rocketlazyloadscript">
+        window.addEventListener('load', function() {
+    document.addEventListener('click', function(event) {
+      if (event.target.closest('button') && event.target.closest('button').innerText.includes('DOWNLOAD FLYER NOW')) {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-1009773705/DTNECLnriuADEInZv-ED'
+        });
+      }
+    });
+  });
+
+</script>
+    <script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+        "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+    <script id='rocket-preload-links-js-extra'>
+        var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.amp.tech","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+    <script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+        (function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+    <script id='porto-live-search-js-extra'>
+        var porto_live_search = {"nonce":"89550e5817"};
+</script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/themes/porto/inc/lib/live-search/live-search.min.js?ver=6.9.1' id='porto-live-search-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/themes/porto/js/bootstrap.js?ver=5.0.1' id='bootstrap-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/themes/porto/js/libs/jquery.cookie.min.js?ver=1.4.1' id='jquery-cookie-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/themes/porto/js/libs/owl.carousel.min.js?ver=2.3.4' id='owl.carousel-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+    <script type="rocketlazyloadscript" async="async" data-rocket-src='https://www.amp.tech/wp-content/themes/porto/js/libs/jquery.magnific-popup.min.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+    <script id='porto-theme-js-extra'>
+        var js_porto_vars = {"rtl":"","theme_url":"https:\/\/www.amp.tech\/wp-content\/themes\/amp","ajax_url":"https:\/\/www.amp.tech\/wp-admin\/admin-ajax.php","change_logo":"","container_width":"1140","grid_gutter_width":"24","show_sticky_header":"1","show_sticky_header_tablet":"","show_sticky_header_mobile":"","ajax_loader_url":"\/\/www.amp.tech\/wp-content\/themes\/porto\/images\/ajax-loader@2x.gif","category_ajax":"","compare_popup":"","compare_popup_title":"","prdctfltr_ajax":"","slider_loop":"1","slider_autoplay":"1","slider_autoheight":"","slider_speed":"5000","slider_nav":"","slider_nav_hover":"1","slider_margin":"","slider_dots":"1","slider_animatein":"","slider_animateout":"","product_thumbs_count":"4","product_zoom":"1","product_zoom_mobile":"1","product_image_popup":"1","zoom_type":"inner","zoom_scroll":"1","zoom_lens_size":"200","zoom_lens_shape":"square","zoom_contain_lens":"1","zoom_lens_border":"1","zoom_border_color":"#888888","zoom_border":"0","screen_lg":"1164","mfp_counter":"%curr% of %total%","mfp_img_error":"<a href=\"%url%\">The image<\/a> could not be loaded.","mfp_ajax_error":"<a href=\"%url%\">The content<\/a> could not be loaded.","popup_close":"Close","popup_prev":"Previous","popup_next":"Next","request_error":"The requested content cannot be loaded.<br\/>Please try again later.","loader_text":"Loading...","submenu_back":"Back","porto_nonce":"7888ed4eb9","use_skeleton_screen":["blog"],"user_edit_pages":"","quick_access":"Click to edit this element.","goto_type":"Go To the Type Builder.","legacy_mode":"1"};
+</script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/themes/porto/js/theme.js?ver=6.9.1' id='porto-theme-js'></script>
+    <script type="rocketlazyloadscript" async="async" data-rocket-src='https://www.amp.tech/wp-content/themes/porto/js/theme-async.js?ver=6.9.1' id='porto-theme-async-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/porto-functionality/shortcodes/assets/js/countup.min.js?ver=2.9.1' id='countup-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/porto-functionality/shortcodes/assets/js/countup-loader.min.js?ver=2.9.1' id='porto_shortcodes_countup_loader_js-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.13.2' id='elementor-pro-webpack-runtime-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.15.2' id='elementor-webpack-runtime-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.15.2' id='elementor-frontend-modules-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+    <script type="rocketlazyloadscript" id="wp-i18n-js-after">
+        wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+    <script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+        var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.amp.tech\/wp-admin\/admin-ajax.php","nonce":"5f8513b11e","urls":{"assets":"https:\/\/www.amp.tech\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/www.amp.tech\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/www.amp.tech\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.13.2' id='elementor-pro-frontend-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+    <script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+        var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.15.2","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"theme_builder_v2":true,"landing-pages":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/www.amp.tech\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":"991","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":16,"title":"AMP%20Energy%20Management%20for%20EV","excerpt":"","featuredImage":false}};
+</script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.15.2' id='elementor-frontend-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.13.2' id='pro-elements-handlers-js'></script>
+    <script>
+    window.lazyLoadOptions = [{ elements_selector: "img[data-lazy-src],.rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function(element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }, { elements_selector: ".rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, }];
+    window.addEventListener('LazyLoad::Initialized', function(e) {
+        var lazyLoadInstance = e.detail.instance;
+        if (window.MutationObserver) {
+            var observer = new MutationObserver(function(mutations) {
+                var image_count = 0;
+                var iframe_count = 0;
+                var rocketlazy_count = 0;
+                mutations.forEach(function(mutation) {
+                    for (var i = 0; i < mutation.addedNodes.length; i++) {
+                        if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
+                        if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
+                        images = mutation.addedNodes[i].getElementsByTagName('img');
+                        is_image = mutation.addedNodes[i].tagName == "IMG";
+                        iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+                        is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+                        rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
+                        image_count += images.length;
+                        iframe_count += iframes.length;
+                        rocketlazy_count += rocket_lazy.length;
+                        if (is_image) { image_count += 1 }
+                        if (is_iframe) { iframe_count += 1 }
+                    }
+                });
+                if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
+            });
+            var b = document.getElementsByTagName("body")[0];
+            var config = { childList: !0, subtree: !0 };
+            observer.observe(b, config)
+        }
+    }, !1)
+
+    </script>
+    <script data-no-minify="1" async src="https://www.amp.tech/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+    <script>
+    class RocketElementorAnimation { constructor() { this.deviceMode = document.createElement("span"), this.deviceMode.id = "elementor-device-mode-wpr", this.deviceMode.setAttribute("class", "elementor-screen-only"), document.body.appendChild(this.deviceMode) } _detectAnimations() { let t = getComputedStyle(this.deviceMode, ":after").content.replace(/"/g, "");
+            this.animationSettingKeys = this._listAnimationSettingsKeys(t), document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t => { const e = t.getBoundingClientRect(); if (e.bottom >= 0 && e.top <= window.innerHeight) try { this._animateElement(t) } catch (t) {} }) } _animateElement(t) { const e = JSON.parse(t.dataset.settings),
+                i = e._animation_delay || e.animation_delay || 0,
+                n = e[this.animationSettingKeys.find(t => e[t])]; if ("none" === n) return void t.classList.remove("elementor-invisible");
+            t.classList.remove(n), this.currentAnimation && t.classList.remove(this.currentAnimation), this.currentAnimation = n; let s = setTimeout(() => { t.classList.remove("elementor-invisible"), t.classList.add("animated", n), this._removeAnimationSettings(t, e) }, i);
+            window.addEventListener("rocket-startLoading", function() { clearTimeout(s) }) } _listAnimationSettingsKeys(t = "mobile") { const e = [""]; switch (t) {
+                case "mobile":
+                    e.unshift("_mobile");
+                case "tablet":
+                    e.unshift("_tablet");
+                case "desktop":
+                    e.unshift("_desktop") } const i = []; return ["animation", "_animation"].forEach(t => { e.forEach(e => { i.push(t + e) }) }), i } _removeAnimationSettings(t, e) { this._listAnimationSettingsKeys().forEach(t => delete e[t]), t.dataset.settings = JSON.stringify(e) } static run() { const t = new RocketElementorAnimation;
+            requestAnimationFrame(t._detectAnimations.bind(t)) } } document.addEventListener("DOMContentLoaded", RocketElementorAnimation.run);
+
+    </script>
+</body>
+
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1695176597 -->
