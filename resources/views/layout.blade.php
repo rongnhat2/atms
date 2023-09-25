@@ -149,19 +149,14 @@
                             <div class="mobile-nav-wrap">
                                 <div class="menu-wrap">
                                     <ul id="menu-menu-5122023" class="mobile-menu accordion-menu">
-                                        <li id="accordion-menu-item-10545" class="ampos menu-item menu-item-type-post_type menu-item-object-page"><a href="/connected-energy-management-system/">EMS</a></li>
                                         <li id="accordion-menu-item-10547" class="hamberger menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a class="nolink" href="#">Solutions</a>
                                             <span class="arrow"></span>
                                             <ul class="sub-menu">
                                                 <li id="accordion-menu-item-10991" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/ev-charging-solutions/">Charging</a></li>
-                                                <li id="accordion-menu-item-10993" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/energy-management-system-for-ev/">Energy Management</a></li>
                                                 <li id="accordion-menu-item-10992" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/battery-management-system/">Battery Management</a></li>
                                             </ul>
                                         </li>
-                                        <li id="accordion-menu-item-19975" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/media/">Media</a></li>
                                         <li id="accordion-menu-item-10995" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us/">About Us</a></li>
-                                        <li id="accordion-menu-item-14080" class="desk-men menu-item menu-item-type-post_type menu-item-object-page"><a href="/careers/">Careers</a></li>
-                                        <li id="accordion-menu-item-19944" class="contact-usmenu menu-item menu-item-type-post_type menu-item-object-page"><a href="/contact-us/">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
