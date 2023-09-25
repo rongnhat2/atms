@@ -28,7 +28,8 @@
                                             </div> 
                                             <div class="elementor-element elementor-element-9533ff1 elementor-widget elementor-widget-heading" data-id="9533ff1" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                    <p class="elementor-heading-title elementor-size-default">Automotive Solution</p>      
+                                                    <p class="elementor-heading-title elementor-size-default">Our goal is to influence clean energy through an all-in-one energy management system.</p>   
+                                                    <p class="elementor-heading-title elementor-size-default">If we can unlock clean energy, we can unlock a path to a greener world.</p>      
                                                 </div>
                                             </div>
                                         </div> 

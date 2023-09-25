@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/ev-charging-solutions', function () {
     return view('ev-changing');
 });
+Route::get('/battery-management-system', function () {
+    return view('battery-management-system');
+});
