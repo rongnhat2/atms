@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/about-us', function () {
+    return view('about');
+});
 Route::get('/ev-charging-solutions', function () {
     return view('ev-changing');
 });
