@@ -17,11 +17,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="https://www.amp.tech/xmlrpc.php" />
-    <link rel="shortcut icon" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="shortcut icon" href="{{ asset("favicon.png") }}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{{ asset("favicon.png") }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset("favicon.png") }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset("favicon.png") }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset("favicon.png") }}" />
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <!-- This site is optimized with the Yoast SEO Premium plugin v21.1 (Yoast SEO v21.1) - https://yoast.com/wordpress/plugins/seo/ -->
     <title>ATMS</title>
@@ -53,11 +53,11 @@
     <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
     <link rel="alternate" type="application/rss+xml" title="AMP &raquo; Feed" href="https://www.amp.tech/feed/" />
     <link rel="alternate" type="application/rss+xml" title="AMP &raquo; Comments Feed" href="https://www.amp.tech/comments/feed/" />
-    <link rel="shortcut icon" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="//www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="shortcut icon" href="{{ asset("favicon.png") }}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{{ asset("favicon.png") }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset("favicon.png") }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset("favicon.png") }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset("favicon.png") }}" />
     
 
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
@@ -76,9 +76,9 @@
  
     <meta name="generator" content="Elementor 3.15.2; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
     <link rel="icon" href="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon-150x150.png" sizes="32x32" />
-    <link rel="icon" href="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
-    <meta name="msapplication-TileImage" content="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon.png" />
+    <link rel="icon" href="https:{{ asset("favicon.png") }}" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https:{{ asset("favicon.png") }}" />
+    <meta name="msapplication-TileImage" content="https:{{ asset("favicon.png") }}" />
  
 </head>
 
