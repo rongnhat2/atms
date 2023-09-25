@@ -125,7 +125,6 @@
                                         <div class="inner" style="">
                                             <ul class="sub-menu">
                                                 <li id="nav-menu-item-10991" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="/ev-charging-solutions/">Charging</a></li>
-                                                <li id="nav-menu-item-10993" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="/energy-management-system-for-ev/">Energy Management</a></li>
                                                 <li id="nav-menu-item-10992" class="menu-item menu-item-type-post_type menu-item-object-page" data-cols="1"><a href="/battery-management-system/">Battery Management</a></li>
                                             </ul>
                                         </div>
