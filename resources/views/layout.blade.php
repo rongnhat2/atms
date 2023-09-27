@@ -16,7 +16,7 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="https://www.amp.tech/xmlrpc.php" />
+
     <link rel="shortcut icon" href="{{ asset("favicon.png") }}" type="image/x-icon" />
     <link rel="apple-touch-icon" href="{{ asset("favicon.png") }}" />
     <link rel="apple-touch-icon" sizes="120x120" href="{{ asset("favicon.png") }}" />
@@ -35,14 +35,14 @@
     <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" crossorigin>
     <link rel="preload" as="font" href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2" crossorigin>
     
-    <meta name="description" content="Pioneers in energy management for EVs, AMP provides Charging, BMS, and cloud solutions for all-electric vehicle applications." />
-    <link rel="canonical" href="https://www.amp.tech/" />
+    <meta name="description" content="Pioneers in energy management for EVs, ATMS provides Charging, BMS, and cloud solutions for all-electric vehicle applications." />
+
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="01 Home" />
-    <meta property="og:description" content="Pioneers in energy management for EVs, AMP provides Charging, BMS, and cloud solutions for all-electric vehicle applications." />
-    <meta property="og:url" content="https://www.amp.tech/" />
-    <meta property="og:site_name" content="AMP" />
+    <meta property="og:description" content="Pioneers in energy management for EVs, ATMS provides Charging, BMS, and cloud solutions for all-electric vehicle applications." />
+
+    <meta property="og:site_name" content="ATMS" />
     <meta property="article:modified_time" content="2023-07-31T16:38:19+00:00" />
     <meta property="og:image" content="{{ asset("images/amp.png") }}" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -51,8 +51,7 @@
     </script>
     <!-- / Yoast SEO Premium plugin. -->
     <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
-    <link rel="alternate" type="application/rss+xml" title="AMP &raquo; Feed" href="https://www.amp.tech/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="AMP &raquo; Comments Feed" href="https://www.amp.tech/comments/feed/" />
+
     <link rel="shortcut icon" href="{{ asset("favicon.png") }}" type="image/x-icon" />
     <link rel="apple-touch-icon" href="{{ asset("favicon.png") }}" />
     <link rel="apple-touch-icon" sizes="120x120" href="{{ asset("favicon.png") }}" />
@@ -68,14 +67,10 @@
     <script type="rocketlazyloadscript" data-rocket-src='https://www.amp.tech/wp-content/themes/amp/assets/js/custom.js?ver=6.3' id='custom-script-js'></script>
     <script type="rocketlazyloadscript" data-rocket-src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?ver=6.3' id='wow-script-js'></script>
     <link rel="https://api.w.org/" href="https://www.amp.tech/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://www.amp.tech/wp-json/wp/v2/pages/16" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.amp.tech/xmlrpc.php?rsd" />
-    <link rel='shortlink' href='https://www.amp.tech/' />
-    <link rel="alternate" type="application/json+oembed" href="https://www.amp.tech/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.amp.tech%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="https://www.amp.tech/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.amp.tech%2F&#038;format=xml" />
+    
  
     <meta name="generator" content="Elementor 3.15.2; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
-    <link rel="icon" href="https://www.amp.tech/wp-content/uploads/2022/02/am-favicon-150x150.png" sizes="32x32" />
+    <link rel="icon" href="{{ asset("favicon.png") }}" sizes="32x32" />
     <link rel="icon" href="https:{{ asset("favicon.png") }}" sizes="192x192" />
     <link rel="apple-touch-icon" href="https:{{ asset("favicon.png") }}" />
     <meta name="msapplication-TileImage" content="https:{{ asset("favicon.png") }}" />
