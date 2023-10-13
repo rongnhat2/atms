@@ -1,0 +1,67 @@
+.I-clients{
+	padding: 90px 0;
+}
+.I-clients h3.section-title{
+	margin: 0 0 45px 0;
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	color: #1D2234;
+}
+.I-clients .clients-list{
+	
+}
+.I-clients .clients-list .client-bound{ 
+	padding: 4px;
+	width: 100%; 
+}
+.I-clients .clients-list .client-bound .client-item{
+	box-shadow: 0 0 8px 0 #0000001a;
+	padding: 24px;
+	width: 100%;
+	border-radius: 8px;
+}
+.I-clients .clients-list .client-bound .client-item .client-description{
+	font-size: 18px;
+	font-weight: 400;
+	color: #1D2234
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 26px;
+    -webkit-line-clamp: 4;
+    height: 104px;
+     display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin: 0 0 28px 0;
+}
+.I-clients .clients-list .client-bound .client-item .client-about{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.I-clients .clients-list .client-bound .client-item .client-name{
+	font-size: 20px;
+	font-weight: 600;
+	color: #1D2234;
+	margin: 0 0 6px 0;
+}
+.I-clients .clients-list .client-bound .client-item .client-position{
+	font-size: 18px;
+	font-weight: 400;
+	color: #707D95; 
+}
+.I-clients .clients-list .client-bound .client-item .client-avatar{
+	width: 48px;
+	height: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+

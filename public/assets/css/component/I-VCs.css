@@ -1,0 +1,32 @@
+.I-VCs{
+	width: 100%;
+	padding: 40px 0;
+	background-color: #0A0E29;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.I-VCs .vc-wrapper h4.section-title{
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+.I-VCs .vc-wrapper .vc-list{
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+}
+.I-VCs .vc-wrapper .vc-list .vc-logo{
+	width: auto;
+	height: 100%;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,149 @@
+.I-product{
+
+}
+.I-product .product-flex{
+	padding: 80px 0;
+	display: flex;
+	align-items: center;
+}
+.I-product .product-flex .product-layout{
+	width: 50%;
+	padding: 0 20px;
+}
+.I-product .product-flex .product-layout.w-60{
+	width: 60%;
+}
+.I-product .product-flex .product-layout.w-40{
+	width: 40%;
+}
+
+.I-product .product-flex .product-layout .product-image-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.I-product .product-flex .product-layout .product-image-bg img{
+	width: 70%;
+}
+.I-product .product-flex .product-layout .product-title{
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 72px;
+	color: var(--root-color);
+	padding: 0 0 35px 0;
+	position: relative;
+}
+.I-product .product-flex .product-layout .product-title::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 64px;
+	font-weight: 900;
+	line-height: 96px;
+	content: 'AUTOMOTIVE SENSOR';
+	content: "";
+	color: #fff;
+	text-shadow: 0 0 1.5px var(--root-color);
+	z-index: -1;
+}
+.I-product .product-flex .product-layout .product-name{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 700;
+	color: var(--root-color);
+	margin: 0 0 32px 0;
+}
+.I-product .product-flex .product-layout .product-description{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #343D6C;
+	margin: 0 0 4px 0;
+}
+.I-product .product-flex .product-layout .product-description span{
+
+	display: inline-block;
+}
+.I-product .product-flex .product-layout .product-description span.item-title{
+	width: 30%;
+	display: inline-block;
+}
+.I-product .product-flex .product-layout .product-more{
+	display: inline-block;
+	margin: 30px 0;
+	padding: 8px 48px;
+	font-weight: 600;
+	border: 1px solid var(--root-color);
+	border-radius: 4px;
+	color: var(--root-color);
+}
+
+
+@media only screen and (max-width: 1600px){
+
+}
+@media only screen and (max-width: 1480px){ 
+
+}
+@media only screen and (max-width: 1280px){ 
+	
+}
+@media only screen and (max-width: 1024px){
+
+}
+@media only screen and (max-width: 991px){
+    
+}
+@media only screen and (max-width: 767px){
+	.I-product .wrapper{
+		padding: 0;
+	}
+	.I-product .product-flex .product-layout .product-image-bg{
+		width: 100%;
+	}
+	.I-product .product-flex{
+		display: block;
+	}
+	.I-product .product-flex .product-layout{
+		padding: 0 !important;
+		width: 100%; 
+		max-width: 450px;
+		margin: auto;
+	}
+	.I-product .product-flex .product-layout.w-60{
+		width: 100%;
+	}
+	.I-product .product-flex .product-layout.w-40{
+		width: 100%;
+	}
+	.I-product  .product-flex .product-layout.content-layout{
+		padding: 0 20px !important;
+	}
+	.I-product .product-flex .product-layout .product-title{
+		font-size: 36px;
+		font-weight: 800;
+		line-height: 48px;
+		color: var(--root-color);
+		padding: 0 0 35px 0;
+		position: relative;
+	}
+	.I-product .product-flex .product-layout .product-description span.item-title{
+		width: 40%;
+	}
+	.I-product .product-flex .product-layout .product-description span.item-title{
+		width: 100%;
+		font-weight: 600;
+	}
+	.I-product .product-flex .product-layout .product-description{
+		margin: 0 0 12px 0;
+	}
+}
+@media only screen and (max-width: 575px){
+
+} 

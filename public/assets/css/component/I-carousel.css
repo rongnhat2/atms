@@ -1,0 +1,36 @@
+.I-carousel{
+	background-color: #F6FAFF;
+	padding: 64px 0;
+}
+.I-carousel .page-list { }
+.I-carousel .page-wrapper{ 
+	display: none;
+}
+.I-carousel .page-wrapper .page-title{
+	margin: 0 0 32px 0;
+	font-size: 36px;
+	font-weight: 600;
+	color: #1f1f1f;
+	text-align: center;
+}
+.I-carousel .page-wrapper .page-description{
+	max-width: 600px;
+	margin: 0 auto 32px auto;
+	font-size: 18px;
+	font-weight: 400;
+	color: #1f1f1f;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

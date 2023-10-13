@@ -1,0 +1,116 @@
+header{
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	box-shadow: 0 0 0 1px #ccc;
+}
+header .header-wrapper{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header .header-wrapper .content-wrapper{
+	display: flex;
+	gap: 8px;
+}
+header .header-wrapper .content-wrapper .nav-control{
+	width: 32px;
+	height: 32px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	border: 1px solid #0e356f;
+	font-size: 16px;
+	color: #0e356f;
+} 
+header .header-wrapper .content-wrapper .logo-wrapper{
+	display: flex;
+	height: 30px;
+}
+header .header-wrapper .nav-wrapper{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	transition: all 200ms ease;
+}
+header .header-wrapper .nav-wrapper .nav-item{
+	position: relative;
+	padding: 12px 24px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	color: #1D2234;
+}
+header .header-wrapper .nav-wrapper .nav-item.nav-action{
+	border: 1px solid #0e356f;
+	color: #0e356f;
+}
+header .header-wrapper .nav-wrapper.is-open{
+	left: 0;
+}
+header .header-wrapper .nav-wrapper .nav-item.hightlight::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #0e356f;
+	content: "";
+}
+
+
+
+
+@media only screen and (max-width: 1600px){
+
+}
+@media only screen and (max-width: 1480px){ 
+
+}
+@media only screen and (max-width: 1280px){ 
+	
+}
+@media only screen and (max-width: 1024px){
+
+}
+@media only screen and (max-width: 991px){
+    
+}
+@media only screen and (max-width: 767px){
+	header .header-wrapper{
+		height: 55px
+	}
+	header .header-wrapper .content-wrapper .logo-wrapper{ 
+		width: 160px;
+	}
+	header .header-wrapper .content-wrapper .nav-control{ 
+		display: flex; 
+	} 
+	header .header-wrapper .nav-wrapper{
+		display: block;
+		position: absolute;
+		top: 55px;
+		left: -100%;
+		height: calc(100vh - 55px);
+		width: 100%;
+		max-width: 300px;
+		padding: 24px 16px;
+		background-color: #fff;
+	}
+	header .header-wrapper .nav-wrapper .nav-item{
+		display: block;
+	}
+}
+@media only screen and (max-width: 575px){
+
+} 
+
+
+
+
+
+

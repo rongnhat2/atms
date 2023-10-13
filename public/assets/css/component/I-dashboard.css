@@ -1,0 +1,77 @@
+.I-dashboard{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.I-dashboard .wrapper{ 
+    height: 100vh;
+}
+.I-dashboard .dashboard-wrapper{
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.I-dashboard .dashboard-wrapper .dashboard-content{
+    width: 40%; 
+}
+.I-dashboard .dashboard-wrapper h1.page-title{
+    font-size: 56px; 
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--root-color);
+    margin: 0 0 32px 0;
+}
+.I-dashboard .dashboard-wrapper h1.page-title span{
+    color: #FECF40;
+}
+.I-dashboard .dashboard-wrapper p.page-description{
+    font-size: 24px; 
+    font-weight: 400;
+    color: #343D6C;
+    margin: 0 0 42px 0;
+}
+.I-dashboard .dashboard-wrapper a.launch-app{
+    padding: 12px 24px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343D6C;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+
+
+@media only screen and (max-width: 1600px){
+
+}
+@media only screen and (max-width: 1480px){ 
+
+}
+@media only screen and (max-width: 1280px){ 
+    
+}
+@media only screen and (max-width: 1024px){
+
+}
+@media only screen and (max-width: 991px){
+    
+}
+@media only screen and (max-width: 767px){
+    .I-dashboard .dashboard-wrapper .dashboard-content{
+        width: 100%;
+    }
+    .I-dashboard .dashboard-wrapper h1.page-title{
+        font-size: 36px; 
+    }
+}
+@media only screen and (max-width: 575px){
+
+} 
