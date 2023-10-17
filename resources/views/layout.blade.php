@@ -28,7 +28,15 @@
                 </div>
                 <div class="nav-wrapper">
                     <a href="/about" class="nav-item {{ $nav == 'about' ? 'hightlight' : '' }}">ABOUT US</a>
-                    <a href="/" class="nav-item {{ $nav == 'solution' ? 'hightlight' : '' }}">SOLUTIONS</a>
+                    <div class="nav-item nav-down {{ $nav == 'solution' ? 'hightlight' : '' }}">
+                        SOLUTIONS
+                        <div class="sub-wrapper">
+                            <a href="/automotive-sensor" class=" {{ $nav == 'automotive' ? 'hightlight' : '' }}">AUTOMOTIVE SENSOR</a>
+                            <a href="/charging-solution" class=" {{ $nav == 'charging' ? 'hightlight' : '' }}">CHARGING SOLUTION</a>
+                            <a href="/motor-controllers" class=" {{ $nav == 'motor' ? 'hightlight' : '' }}">MOTOR CONTROLLERS</a>
+                            <a href="/battery-management" class=" {{ $nav == 'battery' ? 'hightlight' : '' }}">BATTERY MANAGEMENT SYSTEM</a>
+                        </div>
+                    </div>
                     <a href="/contact" class="nav-item {{ $nav == 'contact' ? 'hightlight' : '' }}">CONTACT</a> 
                 </div>
             </div>
