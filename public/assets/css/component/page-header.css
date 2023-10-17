@@ -133,6 +133,7 @@ header .header-wrapper .nav-wrapper .hightlight::after{
 		padding: 0 0 0 16px;
 		width: 100%;
 		display: block !important;
+		margin: 24px 0;
 	}
 }
 @media only screen and (max-width: 575px){
