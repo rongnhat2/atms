@@ -128,6 +128,10 @@ header .header-wrapper .nav-wrapper .hightlight::after{
 	header .header-wrapper .nav-wrapper .nav-item{
 		display: block;
 	}
+	header .header-wrapper .nav-wrapper .nav-item.nav-down .sub-wrapper{
+		position: initial;
+		padding: 0 0 0 16px;
+	}
 }
 @media only screen and (max-width: 575px){
 
