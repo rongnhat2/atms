@@ -12,8 +12,7 @@
         <div class="wrapper">
             <div class="dashboard-wrapper">
                 <div class="dashboard-content"> 
-                    <h1 class="page-title">MOTOR CONTROLLERS</h1>
-                    <p class="page-description">ATMS’s motor controllers range could vary from 3000W – 10000W</p>
+                    <h1 class="page-title">BATTERY MANAGEMENT SYSTEM</h1> 
                 </div>
                 <div class="dashboard-content">
                     

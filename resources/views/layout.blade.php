@@ -8,7 +8,7 @@
  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">   
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("favicon.png") }}">
 
     <link rel="stylesheet" href="{{ asset("assets/css/style.css") }}" /> 
@@ -27,17 +27,17 @@
                     </a>
                 </div>
                 <div class="nav-wrapper">
-                    <a href="/about" class="nav-item {{ $nav == 'about' ? 'hightlight' : '' }}">ABOUT US</a>
                     <div class="nav-item nav-down {{ $nav == 'solution' ? 'hightlight' : '' }}">
                         SOLUTIONS
                         <div class="sub-wrapper">
-                            <a href="/automotive-sensor" class=" {{ $nav == 'automotive' ? 'hightlight' : '' }}">AUTOMOTIVE SENSOR</a>
-                            <a href="/charging-solution" class=" {{ $nav == 'charging' ? 'hightlight' : '' }}">CHARGING SOLUTION</a>
-                            <a href="/motor-controllers" class=" {{ $nav == 'motor' ? 'hightlight' : '' }}">MOTOR CONTROLLERS</a>
-                            <a href="/battery-management" class=" {{ $nav == 'battery' ? 'hightlight' : '' }}">BATTERY MANAGEMENT SYSTEM</a>
+                            <a href="/automotive-sensor" >AUTOMOTIVE SENSOR</a>
+                            <a href="/charging-solution" >CHARGING SOLUTION</a>
+                            <a href="/motor-controllers" >MOTOR CONTROLLERS</a>
+                            <a href="/battery-management" >BATTERY MANAGEMENT SYSTEM</a>
                         </div>
                     </div>
-                    <a href="/contact" class="nav-item {{ $nav == 'contact' ? 'hightlight' : '' }}">CONTACT</a> 
+                    <a href="/about" class="nav-item {{ $nav == 'about' ? 'hightlight' : '' }}">ABOUT US</a>
+                    <a href="#contact" class="nav-item {{ $nav == 'contact' ? 'hightlight' : '' }}">CONTACT</a> 
                 </div>
             </div>
         </div>
@@ -45,10 +45,15 @@
     <main> 
         @yield('body')
     </main>
-    <footer  style="background-image: url('assets/images/footer.png');">
-        <img src="assets/images/logo-footer.svg" alt="" class="logo">
-        <p class="contact">12 F., No. 957, Zhongzheng Rd.,Zhonghe Dist., NewTaipei City 235601, Taiwan (R.O.C.) </p>
-        <p class="contact">Frya@atms.com.tw</p>
+    <footer style="background-image: url('assets/images/footer.png');" id="contact">
+        <div class="wrapper">
+            <img src="assets/images/logo-footer.svg" alt="" class="logo">
+            <div class="contact">
+                <h3>CONTACT</h3>
+                <p >12 F., No. 957, Zhongzheng Rd.,Zhonghe Dist., NewTaipei City 235601, Taiwan (R.O.C.) </p>
+                <p >Frya@atms.com.tw</p>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/d8162761f2.js"></script>

@@ -36,6 +36,7 @@
                     <p class="product-description">ATM1301 can monitor voltage, current, power, and delivered energy of the loads</p>
                     <p class="product-description">Increase the longevity of relays by using the zero-cross method</p>
                     <p class="product-description">Supports various types of protection</p>
+                    <a href="/ATM1301_Datasheet.pdf" class="product-more">Data sheet Download</a>
                 </div>
             </div>
         </div>
@@ -110,6 +111,7 @@
                     <h4 class="product-title">ATM 2802</h4>
                     <p class="product-name">OVERVIEW</p>
                     <p class="product-description">ATM2802 is a high-sensitivity AC and DC leakage current sensor.</p>
+                    <a href="/ATM2802-H_Datasheet.pdf" class="product-more">Data sheet Download</a>
                 </div>
             </div>
         </div>

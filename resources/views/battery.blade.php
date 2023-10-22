@@ -32,8 +32,9 @@
                 <div class="product-layout content-layout w-60">
                     <h4 class="product-title">BATTERY MANAGEMENT SYSTEM</h4>
                     <p class="product-name">OVERVIEW</p>
-                    <p class="product-description">ATM3009 is a complete solution for a EV charging mode 2 (IEC 61851-1).</p>
-                    <p class="product-description">ATM3009 provide full support for the protection mechanisms specified in IEC 62752:2016</p>
+                    <p class="product-description">Our BMS is optimized to deliver maximum range with a solid-state design that provides high current/power and reduces overall system costs. </p>
+                    <p class="product-description">Our BMS solutions architecture is highly flexible, configurable, and scalable as per our customer’s requirements. </p>
+                    <p class="product-description">We utilize our proprietary BMS algorithms and software to achieve higher battery optimization with reduced development costs for both our low-voltage (LV) and high-voltage(HV) BMS.</p>
                 </div>
             </div>
         </div>
@@ -45,7 +46,8 @@
                     <h4 class="product-title">BATTERY MANAGEMENT SYSTEM</h4>
                     <p class="product-name">FEATURES</p>
                     <p class="product-description">
-                        Cell TechnologyLithium ion NMC, NCA
+                        <span class="item-title">Cell Technology:</span>
+                        <span class="item-detail">Lithium ion NMC, NCA</span>
                     </p>
                     <p class="product-description">
                         <span class="item-title">Voltage :</span>
