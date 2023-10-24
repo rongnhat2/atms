@@ -27,9 +27,11 @@
                         </div>
                     </div>
                     <div class="product-layout content-layout w-60">
-                        <h4 class="product-title">AUTOMOTIVE SENSOR</h4>
-                        <p class="product-description">Solution to control and monitor AC loads</p>
-                        <p class="product-description">Residual Current Sensor</p>
+                        <div>
+                            <h4 class="product-title">AUTOMOTIVE SENSOR</h4>
+                            <p class="product-description">Solution to control and monitor AC loads</p>
+                            <p class="product-description">Residual Current Sensor</p>
+                        </div>
                         <a href="/automotive-sensor" class="product-more">More</a>
                     </div>
                 </div>
@@ -39,8 +41,10 @@
             <div class="wrapper">
                 <div class="product-flex">
                     <div class="product-layout content-layout w-60"> 
-                        <h4 class="product-title">CHARGING SOLUTION</h4>
+                        <div>
+                            <h4 class="product-title">CHARGING SOLUTION</h4>
                         <p class="product-description">ATM3009 is a compact solution for AC portable charger 3.5kW</p>
+                        </div>
                         <a href="/charging-solution" class="product-more">More</a>
                     </div>
                     <div class="product-layout w-40">
@@ -60,8 +64,10 @@
                         </div>
                     </div> 
                     <div class="product-layout content-layout w-60">
-                        <h4 class="product-title">MOTOR CONTROLLERS</h4>
-                        <p class="product-description">ATMS’s motor controllers range could vary from 3000W – 10000W</p>
+                        <div>
+                            <h4 class="product-title">MOTOR CONTROLLERS</h4>
+                            <p class="product-description">ATMS’s motor controllers range could vary from 3000W – 10000W</p>
+                        </div>  
                         <a href="/motor-controllers" class="product-more">More</a>
                     </div>
                 </div>
@@ -73,20 +79,19 @@
                     <div class="product-layout content-layout w-60"> 
                         <h4 class="product-title">BATTERY MANAGEMENT SYSTEM</h4>
                         <p class="product-description">
-                            <span class="item-title">Cell Technology :</span>
-                            <span class="item-detail">Lithium ion NMC, NCA</span>
+                            Cell Technology : Lithium ion NMC, NCA
                         </p>
                         <p class="product-description">
-                            <span class="item-title">Voltage :</span>
-                            <span class="item-detail">50.4V</span>
+                            Voltage : 50.4V
+                            
                         </p>
                         <p class="product-description">
-                            <span class="item-title">Embedded capacity :</span>
-                            <span class="item-detail">25.6Ah</span>
+                            Embedded capacity :
+                            25.6Ah
                         </p>
                         <p class="product-description">
-                            <span class="item-title">Useable Energy :</span>
-                            <span class="item-detail">1144Wh</span>
+                            Useable Energy :
+                            1144Wh
                         </p>
                         <a href="/battery-management" class="product-more">More</a>
                     </div>

@@ -25,7 +25,7 @@
         <div class="wrapper">
             <div class="product-flex">
                 <div class="product-layout w-40">
-                    <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg.svg") }}');">
+                    <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg.svg") }}'); height: 480px">
                         <img src="{{ asset("assets/images/atm1301.svg") }}" alt="">
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     <p class="product-description">ATM1301 can monitor voltage, current, power, and delivered energy of the loads</p>
                     <p class="product-description">Increase the longevity of relays by using the zero-cross method</p>
                     <p class="product-description">Supports various types of protection</p>
-                    <a href="/ATM1301_Datasheet.pdf" class="product-more">Data sheet Download</a>
+                    <a href="/ATM1301_Datasheet.pdf" class="product-download"><span>Data sheet</span> <img src="{{ asset("assets/images/download.png") }}" alt=""></a>
                 </div>
             </div>
         </div>
@@ -48,44 +48,44 @@
                     <h4 class="product-title">ATM 1301</h4>
                     <p class="product-name">FEATURES</p>
                     <p class="product-description">
-                        <span class="item-title">Topology :</span>
-                        <span class="item-detail">4 independent loads or 3 phase</span>
+                        Topology :
+                        4 independent loads or 3 phase
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Accuracy :</span>
-                        <span class="item-detail">1% for voltage, current, power, 2% for energy</span>
+                        Accuracy :
+                        1% for voltage, current, power, 2% for energy
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Max current :</span>
-                        <span class="item-detail">40A</span>
+                        Max current :
+                        40A
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Operating voltage :</span>
-                        <span class="item-detail">2.7V-3.6V</span>
+                        Operating voltage :
+                        2.7V-3.6V
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Power consumption :</span>
-                        <span class="item-detail">25mA</span>
+                        Power consumption :
+                        25mA
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Baudrate :</span>
-                        <span class="item-detail">19200</span>
+                        Baudrate :
+                        19200
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Protocol :</span>
-                        <span class="item-detail">AT commands Zero-cross detection</span>
+                        Protocol :
+                        AT commands Zero-cross detection
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Relay types :</span>
-                        <span class="item-detail">latching, non-latching AC frequency measurement </span>
+                        Relay types :
+                        latching, non-latching AC frequency measurement 
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Protection :</span>
-                        <span class="item-detail">overload, overvoltage, undervoltage, lost load, short load </span>
+                        Protection :
+                        overload, overvoltage, undervoltage, lost load, short load 
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Dimentions (W x L x H ):</span>
-                        <span class="item-detail">13.20 x 22.30 x 3.80 (mm)</span>
+                        Dimentions (W x L x H ):
+                        13.20 x 22.30 x 3.80 (mm)
                     </p>
                 </div>
                 <div class="product-layout w-40">
@@ -103,15 +103,17 @@
         <div class="wrapper">
             <div class="product-flex">
                 <div class="product-layout w-40">
-                    <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg.svg") }}');">
+                    <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg.svg") }}'); height: 500px;">
                         <img src="{{ asset("assets/images/atm2802.png") }}" alt="">
                     </div>
                 </div>
                 <div class="product-layout content-layout w-60">
-                    <h4 class="product-title">ATM 2802</h4>
-                    <p class="product-name">OVERVIEW</p>
-                    <p class="product-description">ATM2802 is a high-sensitivity AC and DC leakage current sensor.</p>
-                    <a href="/ATM2802-H_Datasheet.pdf" class="product-more">Data sheet Download</a>
+                    <div>
+                        <h4 class="product-title">ATM 2802</h4>
+                        <p class="product-name">OVERVIEW</p>
+                        <p class="product-description">ATM2802 is a high-sensitivity AC and DC leakage current sensor.</p>
+                    </div>  
+                    <a href="/ATM2802-H_Datasheet.pdf" class="product-download"><span>Data sheet</span> <img src="{{ asset("assets/images/download.png") }}" alt=""></a>
                 </div>
             </div>
         </div>
@@ -120,18 +122,20 @@
         <div class="wrapper">
             <div class="product-flex"> 
                 <div class="product-layout content-layout w-60"> 
+                    <div>
+                        
                     <h4 class="product-title">ATM 2802</h4>
                     <p class="product-name">FEATURES</p>
                     <p class="product-description">
                         Fluxgate-based current sensor
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Operating voltage :</span>
-                        <span class="item-detail">5V</span>
+                        Operating voltage :
+                        5V
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Output voltage :</span>
-                        <span class="item-detail">3.3V</span>
+                        Output voltage :
+                        3.3V
                     </p>
                     <p class="product-description">
                         Detect both AC and DC current
@@ -140,16 +144,17 @@
                         Self-test mode
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Compliant :</span>
-                        <span class="item-detail">RoHS, UL 2231-2, IEC62752:2016</span>
+                        Compliant :
+                        RoHS, UL 2231-2, IEC62752:2016
                     </p>
                     <p class="product-description">
-                        <span class="item-title">Dimentions (W x L x H ): </span>
-                        <span class="item-detail">15.00 x 24.80 x 25.80 (mm)</span>
+                        Dimentions (W x L x H ): 
+                        15.00 x 24.80 x 25.80 (mm)
                     </p> 
+                    </div>
                 </div>
                 <div class="product-layout w-40">
-                    <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}');">
+                    <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}'); margin: 0 0 10px 0;">
                         <img src="{{ asset("assets/images/SAC-3 1.png") }}" alt="">
                     </div>
                     <div class="product-image-bg" >
