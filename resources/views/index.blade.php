@@ -77,27 +77,29 @@
             <div class="wrapper">
                 <div class="product-flex">
                     <div class="product-layout content-layout w-60"> 
-                        <h4 class="product-title">BATTERY MANAGEMENT SYSTEM</h4>
-                        <p class="product-description">
-                            Cell Technology : Lithium ion NMC, NCA
-                        </p>
-                        <p class="product-description">
-                            Voltage : 50.4V
-                            
-                        </p>
-                        <p class="product-description">
-                            Embedded capacity :
-                            25.6Ah
-                        </p>
-                        <p class="product-description">
-                            Useable Energy :
-                            1144Wh
-                        </p>
+                        <div>
+                            <h4 class="product-title">BATTERY MANAGEMENT SYSTEM</h4>
+                            <p class="product-description">
+                                Cell Technology : Lithium ion NMC, NCA
+                            </p>
+                            <p class="product-description">
+                                Voltage : 50.4V
+                                
+                            </p>
+                            <p class="product-description">
+                                Embedded capacity :
+                                25.6Ah
+                            </p>
+                            <p class="product-description">
+                                Useable Energy :
+                                1144Wh
+                            </p>
+                        </div>
                         <a href="/battery-management" class="product-more">More</a>
                     </div>
                     <div class="product-layout w-40">
                         <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}');">
-                            <img src="{{ asset("assets/images/item-4.svg") }}" alt="">
+                            <img src="{{ asset("assets/images/item-4.svg") }}" alt="" style="width: 100%;">
                         </div>
                     </div>
                 </div>
