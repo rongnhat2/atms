@@ -155,10 +155,10 @@
                 </div>
                 <div class="product-layout w-40">
                     <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}'); margin: 0 0 10px 0;">
-                        <img src="{{ asset("assets/images/SAC-3 1.png") }}" alt="">
+                        <img src="{{ asset("assets/images/SAC-3 1.png") }}" alt="" style="width: 90%;">
                     </div>
                     <div class="product-image-bg" >
-                        <img src="{{ asset("assets/images/img-safe 2.png") }}" alt="">
+                        <img src="{{ asset("assets/images/img-safe 2.png") }}" alt="" style="width: 90%;">
                     </div>
                 </div>
             </div>

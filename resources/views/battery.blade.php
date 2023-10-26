@@ -86,7 +86,7 @@
                 </div>
                 <div class="product-layout w-40">
                     <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}'); height: 670px;">
-                        <img src="{{ asset("assets/images/battery-1.png") }}" alt="">
+                        <img src="{{ asset("assets/images/battery-1.png") }}" alt="" style="width: 90%;">
                     </div> 
                 </div>
             </div>
