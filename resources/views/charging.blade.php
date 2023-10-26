@@ -70,10 +70,10 @@
                 </div>
                 <div class="product-layout w-40">
                     <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}'); margin: 0 0 10px 0;">
-                        <img src="{{ asset("assets/images/3009-2.png") }}" alt="">
+                        <img src="{{ asset("assets/images/3009-2.png") }}" alt="" style="width: 100%;">
                     </div>
-                    <div class="product-image-bg" >
-                        <img src="{{ asset("assets/images/3009-3.png") }}" alt="">
+                    <div class="product-image-bg" style="background-color: #fff !important;" >
+                        <img src="{{ asset("assets/images/3009-3.png") }}" alt="" style="width: 100%;">
                     </div>
                 </div>
             </div>

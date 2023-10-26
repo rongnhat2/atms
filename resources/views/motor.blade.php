@@ -91,8 +91,8 @@
                     <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}'); margin: 0 0 10px 0;">
                         <img src="{{ asset("assets/images/motor-2.png") }}" alt="">
                     </div>
-                    <div class="product-image-bg" >
-                        <img src="{{ asset("assets/images/motor-3.png") }}" alt="">
+                    <div class="product-image-bg" style="background-color: #fff !important;">
+                        <img src="{{ asset("assets/images/motor-3.png") }}" alt="" style="width: 100%;">
                     </div>
                 </div>
             </div>

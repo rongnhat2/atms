@@ -13,6 +13,7 @@
             <div class="dashboard-wrapper">
                 <div class="dashboard-content">
                     <h1 class="page-title">BATTERY MANAGEMENT SYSTEM</h1>
+                    <p class="page-description">For all electric vehicle applications</p>
                 </div>
                 <div class="dashboard-content">
                     

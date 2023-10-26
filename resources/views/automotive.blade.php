@@ -89,11 +89,11 @@
                     </p>
                 </div>
                 <div class="product-layout w-40">
-                    <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}');">
-                        <img src="{{ asset("assets/images/SAC-3 1.png") }}" alt="">
+                    <div class="product-image-bg" style="background-image: url('{{ asset("assets/images/bg-2.svg") }}'); margin: 0 0 48px 0;">
+                        <img src="{{ asset("assets/images/SAC-3 1.png") }}" style="width: 90%;" alt="">
                     </div>
                     <div class="product-image-bg" >
-                        <img src="{{ asset("assets/images/charg2802 2.png") }}" alt="">
+                        <img src="{{ asset("assets/images/charg2802 2.png") }}" style="width: 90%;" alt="">
                     </div>
                 </div>
             </div>

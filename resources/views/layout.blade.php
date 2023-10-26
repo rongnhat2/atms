@@ -30,10 +30,10 @@
                     <div class="nav-item nav-down {{ $nav == 'solution' ? 'hightlight' : '' }}">
                         SOLUTIONS
                         <div class="sub-wrapper">
-                            <a href="/automotive-sensor" >AUTOMOTIVE SENSOR</a>
-                            <a href="/charging-solution" >CHARGING SOLUTION</a>
-                            <a href="/motor-controllers" >MOTOR CONTROLLERS</a>
-                            <a href="/battery-management" >BATTERY MANAGEMENT SYSTEM</a>
+                            <a href="/automotive-sensor" class=" {{ $nav == 'automotive' ? 'hightlight' : '' }}"" >AUTOMOTIVE SENSOR</a>
+                            <a href="/charging-solution" class=" {{ $nav == 'charging' ? 'hightlight' : '' }}"" >CHARGING SOLUTION</a>
+                            <a href="/motor-controllers" class=" {{ $nav == 'motor' ? 'hightlight' : '' }}"" >MOTOR CONTROLLERS</a>
+                            <a href="/battery-management" class=" {{ $nav == 'battery' ? 'hightlight' : '' }}"" >BATTERY MANAGEMENT SYSTEM</a>
                         </div>
                     </div>
                     <a href="/about" class="nav-item {{ $nav == 'about' ? 'hightlight' : '' }}">ABOUT US</a>
