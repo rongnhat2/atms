@@ -73,7 +73,7 @@
                     </p>
                     <p class="product-description">
                         Working Temperature :
-                        Discharge -10O/60OC / Charge OO / 45OC
+                        Discharge -10O/60OC / Charge O° / 45°C
                     </p>
                     <p class="product-description">
                         Relay Standard :

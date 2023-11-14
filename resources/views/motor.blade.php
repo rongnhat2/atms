@@ -79,7 +79,7 @@
                         </p>
                         <p class="product-description">
                             Working Temperature :
-                            -20OC - 80OC
+                            -20°C - 80°C
                         </p>
                         <p class="product-description">
                             Water Resistant :
