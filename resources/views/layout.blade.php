@@ -34,6 +34,7 @@
                             <a href="/charging-solution" class=" {{ $nav == 'charging' ? 'hightlight' : '' }}"" >CHARGING SOLUTION</a>
                             <a href="/motor-controllers" class=" {{ $nav == 'motor' ? 'hightlight' : '' }}"" >MOTOR CONTROLLERS</a>
                             <a href="/battery-management" class=" {{ $nav == 'battery' ? 'hightlight' : '' }}"" >BATTERY MANAGEMENT SYSTEM</a>
+                            <a href="/ac-controller" class=" {{ $nav == 'ac' ? 'hightlight' : '' }}"" >AC - CONTROLLER</a>
                         </div>
                     </div>
                     <a href="/about" class="nav-item {{ $nav == 'about' ? 'hightlight' : '' }}">ABOUT US</a>

@@ -30,6 +30,10 @@ class DisplayController extends Controller
         $nav = 'battery';  
         return view("battery", compact("nav"));
     }
+    public function ac(Request $request){
+        $nav = 'ac';  
+        return view("ac", compact("nav"));
+    }
     public function contact(Request $request){
         $nav = 'contact';  
         return view("contact", compact("nav"));

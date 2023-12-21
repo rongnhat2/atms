@@ -19,4 +19,5 @@ Route::get('/automotive-sensor', 'DisplayController@automotive')->name('customer
 Route::get('/charging-solution', 'DisplayController@charging')->name('customer.view.charging'); 
 Route::get('/motor-controllers', 'DisplayController@motor')->name('customer.view.motor'); 
 Route::get('/battery-management', 'DisplayController@battery')->name('customer.view.battery'); 
+Route::get('/ac-controller', 'DisplayController@ac')->name('customer.view.ac'); 
 Route::get('/contact', 'DisplayController@contact')->name('customer.view.contact'); 
